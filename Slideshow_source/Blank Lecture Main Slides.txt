@@ -1,0 +1,31 @@
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "slideshow": {
+     "slide_type": "slide"
+    }
+   },
+   "source": [
+    "## Slide Title"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Edit Slide Audio\n",
+    "<audio controls data-autoplay preload>\n",
+    " <source src=\"https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_1/Lecture_Title/Slide_Title.mp3\"\n",
+    "         type='audio/mp3'>\n",
+    " <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>\n",
+    "</audio>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Slide Content"
+   ]
+  },
+
