@@ -1,0 +1,36 @@
+{
+   "cell_type": "markdown",
+   "metadata": {
+    "slideshow": {
+     "slide_type": "slide"
+    }
+   },
+   "source": [
+    "## Slide Show Table of Contents"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<audio controls data-autoplay preload>\n",
+    " <source src=\"mp3 Path\"\n",
+    "     type='audio/mp3'>\n",
+    " <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>\n",
+    "</audio>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "slideshow": {
+     "slide_type": "-"
+    }
+   },
+   "source": [
+    "* [Lecture Title](#)\n",
+    "    * [Slide Title](#/2)\n",
+    "        * [Sub-Slide Title](#/2/1)\n",
+    "    * [References](#/4)\n"
+   ]
+  },
