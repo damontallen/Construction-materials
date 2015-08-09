@@ -41,8 +41,10 @@ be notified upon completion, or errors."""
     os.chdir(path)
     path = os.getcwd()
     parts = path.rsplit('/',1)
-    slide_path = '/'.join([parts[0],parts[1]+"-gh-pages",parts[1]]) + '/'
+    slide_path = '/'.join([parts[0],"Github.io/Construction-materials"]) + '/'
     er = 0
+    #print(slide_path)
+    #return
     for f in files:
         name = f.split('/')[-1]
         slides = name.split('.')[0] + '.slides.html'
