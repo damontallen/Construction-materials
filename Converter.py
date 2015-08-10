@@ -41,7 +41,7 @@ be notified upon completion, or errors."""
     os.chdir(path)
     path = os.getcwd()
     parts = path.rsplit('/',1)
-    slide_path = '/'.join([parts[0],"Github.io/Construction-materials"]) + '/'
+    slide_path = '/'.join([parts[0],"Github.io/Second attempt/Construction-materials"]) + '/'
     er = 0
     #print(slide_path)
     #return
