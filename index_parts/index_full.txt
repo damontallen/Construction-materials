@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Construction-lectures : IPython Notebooks that contain lectures on Temporary Structures" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Construction-lectures</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+    <header>
+      <h1 class="title" align="center">Construction Materials</h1>
+      
+    </header>
+    <div id="container">
+      <p class="tagline"; style="color:#ffffff;"; align="center">This contains the IPython notebook slide shows that are used in the teaching of my Constructions Materials course.</p>
+      <p align="center"><img src="https://avatars0.githubusercontent.com/u/3960738" title="Dr. Damon Allen" alt="Professor picture" height="10%" width="10%" ></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/damontallen/Construction-materials/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/damontallen/Construction-materials/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/damontallen/Construction-materials" class="code">View Construction Materials on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+<h3>
+<a id="Module-0" class="anchor" href="#Module-0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 0 - Greeting</h3>
+
+<pre><code><a href="Greetings.slides.html">Greetings</a>
+<a href="Course Introduction.slides.html">Course Introduction</a>
+<a href="Materials.slides.html">Materials</a>
+</pre></code>
+<h3>
+<a id="Module-1" class="anchor" href="#Module-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 1 - Sustainability</h3>
+
+<pre><code><a href="Sustainability.slides.html">Sustainability</a>
+</pre></code>
+<h3>
+<a id="Module-2" class="anchor" href="#Module-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 2 - Steel and Aluminum</h3>
+
+<pre><code><a href="Steel.slides.html">Steel</a>
+<a href="Aluminum.slides.html">Aluminum</a>
+</pre></code>
+<h3>
+<a id="Module-3" class="anchor" href="#Module-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 3 - Wood</h3>
+
+<pre><code><a href="Wood.slides.html">Wood</a>
+</pre></code>
+<h3>
+<a id="Module-4" class="anchor" href="#Module-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 4 - Asphalt</h3>
+
+<pre><code><a href="Asphalt.slides.html">Asphalt</a>
+</pre></code>
+<h3>
+<a id="Module-5" class="anchor" href="#Module-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 5 - Concrete</h3>
+
+<pre><code><a href="Concrete.slides.html">Concrete</a>
+</pre></code>
+<h3>
+<a id="Module-6" class="anchor" href="#Module-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 6 - Masonry</h3>
+
+<pre><code><a href="Masonry.slides.html">Masonry</a>
+</pre></code>
+<h3>
+<a id="Module-7" class="anchor" href="#Module-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 7 - Moisture</h3>
+
+<pre><code><a href="Moisture.slides.html">Moisture</a>
+</pre></code>
+<h3>
+<a id="Module-8" class="anchor" href="#Module-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 8 - Flooring</h3>
+
+<pre><code><a href="Flooring.slides.html">Flooring</a>
+</pre></code>
+<h3>
+<a id="Module-9" class="anchor" href="#Module-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 9 - Carpet</h3>
+
+<pre><code><a href="Carpet.slides.html">Carpet</a>
+</pre></code>
+<h3>
+<a id="Module-10" class="anchor" href="#Module-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 10 - Gypsum</h3>
+
+<pre><code><a href="Gypsum.slides.html">Gypsum</a>
+</pre></code>
+<h3>
+<a id="Module-11" class="anchor" href="#Module-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 11 - Paint</h3>
+
+<pre><code><a href="Paint.slides.html">Paint</a>
+</pre></code>
+<h3>
+<a id="Module-12" class="anchor" href="#Module-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>Module 12 - Glass and Plastic</h3>
+
+<pre><code><a href="Glass.slides.html">Glass</a>
+<a href="Plastic.slides.html">Plastic</a>
+</pre></code>
+
+<h3>
+<a name="References and Resources" class="anchor" href="#Resources"><span class="octicon octicon-link"></span></a>References and Resources
+</h3>
+
+<pre><code><a href="http://ipython.org/">IPython.org</a>
+<a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Open source software used in the development of this course.</a>
+<a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Rubrics%20and%20Excel%20Help.ipynb">Excel help and Rubrics</a>
+</code></pre>
+
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Have questions about lecture content?  Contact <a href="mailto:damontallen+Githubio@gmail.com?subject=Github Construction Lectures">Damon Allen PhD</a> and I’ll try help you out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Construction-lectures maintained by <a href="https://github.com/damontallen">damontallen</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
