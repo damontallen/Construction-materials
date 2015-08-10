@@ -1,0 +1,24 @@
+/*Some css fixes to use night theme with IPython slides*/
+/*background-color: #f6f6f6;*/
+/*background-image:url("Dorsey and Gable Trim Dec 2003 001.jpg");*/
+body {
+background-color: #b2a57f;
+background-image:url("Small Logo.png");
+background-repeat: no-repeat;
+
+}
+/*.reveal p {
+color: white;
+}
+.reveal ul, ol {
+color: white;
+}
+div.output_area pre {
+color: white;
+}
+div.output_stderr {
+background: #F00;
+}
+.reveal table th, .reveal table td {
+color: white;
+}*/
