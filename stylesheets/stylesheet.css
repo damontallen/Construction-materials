@@ -71,6 +71,10 @@ h1 {
   font-weight: 700;
 }
 
+header h1 {
+  color:#FFFFFF;
+}
+
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
