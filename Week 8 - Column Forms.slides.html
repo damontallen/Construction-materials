@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Asphalt slides</title>
+<title>Week 8 - Column Forms slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -140,6 +140,28 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
+<style type="text/css">
+    /*
+Placeholder for custom user CSS
+
+mainly to be overridden in profile/static/custom/custom.css
+
+This will always be an empty file in IPython
+*/
+
+/*body{
+position: static;
+}
+#menubar, #header, #maintoolbar {
+display:none !important;
+}*/
+
+/*
+.ipynb_ruler {
+    border-color: #DFDFDF;
+}*/
+
+    </style>
 
 
 <style type="text/css">
@@ -222,7 +244,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Asphalt">Asphalt<a class="anchor-link" href="#Asphalt">&#182;</a></h1>
+<h1 id="Column-Forms">Column Forms<a class="anchor-link" href="#Column-Forms">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -231,8 +253,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Embedded YouTube Video</p>
-
+<iframe width="420" height="315" src="//www.youtube.com/embed/DpKgDHq0FTM" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 </div></section>
@@ -244,7 +265,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-Show-Table-of-Contents">Slide Show Table of Contents<a class="anchor-link" href="#Slide-Show-Table-of-Contents">&#182;</a></h2>
+<h2 id="What-are-Column-Forms">What are Column Forms<a class="anchor-link" href="#What-are-Column-Forms">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -254,8 +275,8 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="mp3 Path"
-     type='audio/mp3'>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/What%20are%20Column%20Forms.mp3"
+         type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
 </div>
@@ -266,342 +287,250 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Column forms start out similar to wall forms.  Both require you to calculate the concrete pressure, and you need to analyze the plywood to determine the support spacing.  You will even have to look at the support spacing for the studs, except that the studs are likely to be placed on the flat.  This change is not difficult to take into account you would just need to apply the $C_{fu}$ factor to the allowable bending stress, and use the properties in Table 1B that are for bending about the Y-Y Axis.</p>
+<p><a href = "http://www.westernsafety.com/ellismanufacturing/ellispg11-ColumnClamps.jpg"><img src="http://www.westernsafety.com/ellismanufacturing/ellispg11-ColumnClamps.jpg" alt = "Column Form with Column Clamps" title = "Column Form with Column Clamps" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>The real difference is what you do next.  Rather than use wales, you are likely going to use column clamps.  Before I go any further I will add this caveat that you do not have to use column clamps; you can use ties and wales just like in a wall form.  You can even make job build column clamps (or yokes) if you provide enough resistance to spreading in the corners.</p>
+<p><a href = "http://www.ellisok.net/sites/default/files/product_pics/Column%20Clamp%20Scissor.jpg"><img src="http://www.ellisok.net/sites/default/files/product_pics/Column%20Clamp%20Scissor.jpg" alt = "Another Example of Column Clamps" title = "Another Example of Column Clamps"style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
+<p>There are many <a href="https://www.google.com/search?q=column+clamp+vs+yoke&client=ubuntu-browser&espv=2&es_sm=125&source=lnms&tbm=isch&sa=X&ei=hQw3U-SQKpXQsQSYkICYDw&ved=0CAkQ_AUoAg&biw=1280&bih=645#q=column+clamp&tbm=isch">different versions</a> of column clamps but for our example we will use <a href="http://www.masco.net/productimages/concreteformingaccessories/columnforming/scissorclamp/scissor_clamp.jpg">Masco Scissor Clamps</a>.  The important part of this is that we will be using the <a href="http://www.masco.net/pdf/catalogs/formingandaccessories/page83.pdf">Clamp Spacing Chart (pdf)</a>.  The way this spacing chart is used is on the left you read off the pressure in the form, and you read over to the size of the column form to detemine the clamp spacing at that point. (<a href="http://www.masco.net/">www.masco.net</a>)</p>
+<p>The way this chart, and others like it, are setup is that the concrete pressure is based on the hydrostatic pressure of liquid concrete at the depth indicated (distance from the top).  Even though the pressure equations, mentioned in the wall form presentation, are still valid, the column will more likely be filled at such a rate as the hydrostatic pressure will control anyway.  The result of all of this is that you can simply find your column size, and just read from the top down to get all the clamp spacings.</p>
+<p>For instance, if your column form is 24" by 24", and 10' tall, then, starting from the top, you would have a clamp at 2" down, then the next one is 28" below that then, 24", 20", 18", 12", and 12".  This last clamp ends up about 4" above the base.  You will always want a clamp somewhere between 4" to 6" above the base, so if the column was 10'-6" tall then an additional clamp would need to be added.  This reduces the load on the fasteners in the wooden base plate (or yoke) around the bottom.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a></a></p>
+<p><a  href = "http://www.ellisok.net/scissor-type-column-form-clamps" style="float:left;">Image [2] Source</a></p>
+<p><a  href = "http://www.westernsafety.com/ellismanufacturing/ellispg1.html" style="float:right;">Image [1] Source</a></p>
+<p>and</p>
+<p><em>(Continued on the next slide.)</em></p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/What%20are%20Column%20Forms%20continued.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The column clamps are designed to resist the outward pressure of the column but they do have their limits.  Unlike with ties, the larger the column the greater the load on the clamp.  These clamps have to support every stud they cross.  The more studs they span the greater the load at the corners of the clamp.  Beyond a certain size, you will need to resort to ties, or <a href="http://williamsform.com/Concrete_Forming_Hardware/Test_Area/Miscellaneous_Light_Concrete_Forming/form_clamp2.jpg">pencil rod</a> and <a href="http://williamsform.com/Concrete_Forming_Hardware/Test_Area/Miscellaneous_Light_Concrete_Forming/form_clamp1.jpg">pencil rod clamps</a>, in conjunction with wales to resist the spread of a form (aka a blowout).</p>
+<p><em>(<a href="http://williamsform.com/Concrete_Forming_Hardware/Test_Area/Miscellaneous_Light_Concrete_Forming/miscellaneous_light_forming.html">Pencil rod image source.</a>)</em></p>
+<p>An additional concern is lift.  You need to make sure that the column form is attached to the footing or slab that it is being poured on.  With the pressure of a pour, and some vibration, it is possible that a column form will lift up off of its base.  It doesn't take much to hold a form down, but once it starts to go, more surface area becomes exposed to the upward pressure at the bottom of the form, and failure becomes inevitable.  The best thing to do to prevent it is to have a tight fit between the base  of the form and the slab, or footing.  Think of it like this, it is easy to stop a small leak, but it is hard to stop a large one.  The force required to stop either is,</p>
+<p>$F = pressure \times area$</p>
+<p>The final thing you need to do is to make sure that the column clamp table works with your form.  The spacings of these clamps are based on specific material.  If you have weaker material than the column clamp table was designed form you will need to calculate the spacings for all the clamps.  The quick check is to determine the spacing for the bottom clamp.  If this spacing is greater than the chart spacing then you can just use the chart.</p>
+<p>Let's look at an example.</p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Problem%20Statement.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href = "http://i.imgur.com/CGIuiLd.png"><img src="http://i.imgur.com/CGIuiLd.png" alt = "Column Form Cross Section" title = "Column Form Cross Section" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>The forms for a 20" x 20" square column will consist of 3/4" thick Class I Plyform backed with vertical, No.2 Douglas Fir-Larch, 2x4, battens (another word for studs laid on the flat), as shown.  Normal weight (150 pcf) concrete will be used in the 10 ft high pour.  The Class I Plyform will be oriented in the in the strongest direction, i.e. the grain will run horizontally.  We will assume the column form will be reused multiple times.</p>
+<p>Determine:</p>
+<p>a) Is the batten spacing acceptable?</p>
+<p>b) What is the recommended clamp spacing?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To start with we need to find the maximum pressure on the column form.</p>
+<p>Concrete Pressure, $P = 150 pcf \times h$</p>
+<p>$P = 150 pcf \times 10 ft = 1500 psf$</p>
+
+</div>
+</div>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">P</span> <span class="o">=</span> <span class="mi">1500</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Familiar-Equations">Familiar Equations<a class="anchor-link" href="#Familiar-Equations">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Familiar%20Equations.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For Bending, span, $L = 10.95 \sqrt{\frac{F_b' S}{w}}$</p>
+<p>For Rolling shear, span, $L = \frac{20 \times F_s'}{w}\times \frac{I b }{Q}$ (for sheathing like plywood only)</p>
+<p>For Shear, span, $L = 13.33 \times \frac{F_v' b d}{w} + 2 d$ (for dimensional lumber only)</p>
+<p>For deflection where $\Delta = {}^L/_{360}$,  span, $L = 1.69 \sqrt[3]{\frac{E' I}{w}}$</p>
+<p>For deflection where $\Delta = {}^1/_{16}\text{"}$,  span, $L = 3.23 \sqrt[4]{\frac{E' I}{w}}$</p>
+<p>Stress = Load/Area</p>
+<p><em>(See the slide below for variable definitions.)</em></p>
+
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the span length equations:</p>
 <ul>
-<li><a href="#">Asphalt</a><ul>
-<li><a href="#/3">Sustainability</a></li>
-<li><a href="#/4">Toxicity and the Environment</a></li>
-<li><a href="#/5">Recycling</a></li>
-<li><a href="#/6">Reuse</a></li>
-<li><a href="#/7">Material Properties</a></li>
-<li><a href="#/8">Strength</a></li>
-<li><a href="#/9">Structural Failure Modes</a></li>
-<li><a href="#/10">Environment Induced Failure Modes</a></li>
-<li><a href="#/11">Chemical Weaknesses</a></li>
-<li><a href="#/12">Safe Operating Temperatures</a></li>
-<li><a href="#/13">Material Tests</a></li>
-<li><a href="#/14">Quality Levels</a></li>
-<li><a href="#/15">Residential Applications</a></li>
-<li><a href="#/16">Commercial Applications</a></li>
-<li><a href="#/17">Industrial Applications</a></li>
-<li><a href="#/18">Cost Examples</a></li>
-<li><a href="#/19">Material Sources</a></li>
-<li><a href="#/20">Examples of Installation Tools</a></li>
-<li><a href="#/21">Famous Failures</a></li>
-<li><a href="#/22">References</a></li>
-</ul>
+<li>$L$ is the spacing between supports, in units of $inches (in)$</li>
+<li><p>$w$ is the uniformly distributed line load on the beam, in units of $plf$</p>
 </li>
-</ul>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sustainability">Sustainability<a class="anchor-link" href="#Sustainability">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Sustainability.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Road"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/PavementStratum.JPG/440px-PavementStratum.JPG" alt = "Pavement cross section image" Title="Asphalt Pavement"  style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>As asphalt comes for fossil fuels directly you might not think sustainability could apply.  However the National Asphalt Pavement Association (NAPA) is working on making asphalt greener.  The most familiar approach is recycling. Reclaimed asphalt pavement (RAP) has been around for about 35 years and more than 100 million tons of asphalt is reclaimed annually.  Most of this reclaimed asphalt is then recycled back into pavement.  In addition to this material from other industries like roofing shingles and rubber from used tires is incorporated into asphalt pavement.</p>
-<p>According to the <a href="https://www.asphaltpavement.org/index.php?option=com_content&view=article&id=493&Itemid=1058">Asphalt Sustainability Report</a> that NAPA put out in 2009, if RAP usage is increased to 25 percent of the average mix design it will reduce total life-cycle greenhouse gas emissions by 10 percent ($\approx$ 2,000,000 tons annually).  It should be noted that asphalt pavement is actually only 5 percent asphalt and the rest is aggregates (stone, sand and gravel).  This means that very little of asphalt actually makes up pavement.</p>
-<p>Like with other materials the majority of the greenhouse gases come from the processing of asphalt.  However, unlike the other materials we have covered so far, there are other environmental impacts caused from the use of asphalt.  Some of these include the heat retention, also known as the heat island effect, stormwater runoff, and emissions of other pollutants during processing.</p>
-<p>The asphalt industry is either researching how or actively trying to reduce the impacts of these problems on the environment.</p>
-<p>(<em><a href="https://www.youtube.com/watch?v=1l1RRETevxk">Video about Pavement Mix Design Testing</a></em>)</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Toxicity-and-the-Environment">Toxicity and the Environment<a class="anchor-link" href="#Toxicity-and-the-Environment">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Toxicity%20and%20the%20Environment.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Asphalt is pavement is not considered a toxic substance per say.  It is basically an inert solid.  However there are some health risks in its application due to the fact that it needs to be a liquid.  The majority of asphalt is applied hot rather than mixed with a solvent ("cutback" mixes).  This means that it needs to be between 212 - 320$^\circ$F to be applied.  At that temperature it is a burn hazard but it also can produce hydrogen sulfide (H$_2$S).  Hydrogen sulfide, which smells like rotten eggs, is like carbon monoxide in displacing oxygen so it can be toxic if concentrated, and it is mildly acidic so can irritate the eyes and lungs.  It also reacts with iron to product iron sulfide which is flammable at 130$^\circ$F.  An excerpt from an asphalt material safety data sheet (MSDS) is below.</p>
-<blockquote><p>Hot material can cause severe eye and skin burns on contact.  Hydrogen sulfide from heated material can accumulate in vapor space of tanks and containers.  Contact between heated material and water can cause a violent eruption.  Fumes from heated material can cause irritation to the eyes, skin, and respiratory system, and can increase susceptibility to sunburn.</p>
-<p>...</p>
-
-<p>This product, Asphalt (CAS-No.: 8052-42-4), may contain trace amounts of benzene a chemical known to cause cancer. <a href="http://www.montmech.com/hasp/MISC/MSDS/MSDS%20files%5C12007%20Asphalt.pdf">Source: MSDS</a></p>
-</blockquote>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Recycling-and-Reuse">Recycling and Reuse<a class="anchor-link" href="#Recycling-and-Reuse">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Recycling%20and%20Reuse.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Asphalt can be recycled if the layer of pavement is removed mixed with fresh asphalt.  This reduces the greenhouse gas emissions and the process can be repeated indefinitely.  Over time asphalt combines with oxygen* and becomes more brittle.  This in turn makes the pavement more susceptible to damage from heavy vehicles.  Asphalt pavement is basically gravel with asphalt as a binder.  If the asphalt breaks because it is too brittle to deflect then the pavement begins to revert back to gravel.  By recombining the old asphalt with new it regains the needed ductility to maintain cohesion.</p>
-<p>*<a href="https://web.anl.gov/PCS/acsfuel/preprint%20archive/Files/37_3_WASHINGTON%20DC_08-92_1367.pdf">Oxidation Pathways for Asphalt</a></p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Material-Properties">Material Properties<a class="anchor-link" href="#Material-Properties">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Material%20Properties.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Soil_gradation"><img src="http://i.imgur.com/xfLGFkS.jpg" alt = "Well graded aggregate image" Title="Well Graded Aggregate"  style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>The strength of asphalt pavement does not come from the asphalt as much as the aggregate that make it up.  If the aggregate have a good distribution in size (well graded) where the voids between larger pieces are filled with smaller ones then the stability and strength can be quite high in compression.  <img src="http://i.imgur.com/BUeNZat.jpg" alt = "Subgrade pressure distribution image" Title="Pavement Pressure Distribution"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/> One key aspect of the aggregate in asphalt concrete is that the the aggregate needs to be irregular and angular so that they will interlock when load is applied.  If smooth aggregate is used the particles will slide past each other when loaded.</p>
-<p>Asphalt pavement in tension a can have strength that ranges from 600 - 1,500 psi.  But the load on pavement is only in tension due to Poisson's ratio.</p>
-<p>Unless porous pavement is used asphalt is impermeable.  This is why roadways are slanted instead of level; so water does not pool up on them.  Water that is shed needs to be collected by storm run off systems and retained so it does not lead to erosion and pollution in the local water shed.  Additionally, over time, heavy vehicle traffic leads to rutting on roads which allows water to collect.  This becomes a driving hazard due to the potential of hydroplaning and loss of control.  For these reasons a version of asphalt pavement has been developed that is porous and if placed over a stone recharge bed will allow for water to enter the ground without the need for retention ponds.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Structural-Failure-Modes">Structural Failure Modes<a class="anchor-link" href="#Structural-Failure-Modes">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Structural%20Failure%20Modes.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Federal_Bridge_Gross_Weight_Formula"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bridgeweight.svg/340px-Bridgeweight.svg.png" alt = "Bridge load limit sign image" Title="Load Limit Sign"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>Asphalt pavement will fail if it is subjected to loads in excess of the roadway design.  It would take 10,000 cars traveling down a road to cause the same damage done as one large truck.  These truck can overload the base and subbase of a road prematurely causing them to rut if the top pavement layer is still flexible.  Otherwise the pavement can crack allowing water to penetrate the base which can then be washed out.  <a href = "https://en.wikipedia.org/wiki/Crocodile_cracking"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Asphalt_deterioration.jpg/440px-Asphalt_deterioration.jpg" alt = "Crocodile cracking image" Title="Fatigued Pavement"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a>As more traffic passes over the saturated base water is pumped back and forth through the base forcing the fine particulates to the surface where it can be washed away.<a href = "https://en.wikipedia.org/wiki/Pothole"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Factors_leading_to_pothole_failure_by_fatigue.png" alt = "Pothole formation image" Title="Northern Climate Pothole"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>This process of pumping can lead to a hole in the supporting base which in turn leads to pot holes.  In northern climates the process can be accelerated with a freeze-thaw cycle.  This is where water penetrates the base, freezes and expands.  This causes more cracking and displacement of surrounding base material.  Once the frozen water thaws it shrinks and flows away leaving an unsupported section in the road that collapses into a pothole.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Environment-Induced-Failure-Modes">Environment Induced Failure Modes<a class="anchor-link" href="#Environment-Induced-Failure-Modes">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Environment%20Induced%20Failure%20Modes.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Asphalt can be damaged when exposure to freezing temperatures. This causes the asphalt binder to become brittle and shrink.  This makes the asphalt much more likely to crack.  Once the pavement becomes cracked then it can allow water to flow in and create a pothole.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Chemical-Weaknesses">Chemical Weaknesses<a class="anchor-link" href="#Chemical-Weaknesses">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Chemical%20Weaknesses.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Oil is one of the compounds that you must avoid having asphalt exposed to.  It will weaken and dissolve asphalt.  In addition to oil asphalt can be damaged by diesel fuel, and gasoline.  You can see damage done by cars leaking oil in older asphalt parking lots.  Asphalt can be damaged by any lightweight hydrocarbons.  These same hydrocarbons are used as solvents in cutback mixes of asphalt.  They can break apart the <a href="https://en.wikipedia.org/wiki/Van_der_Waals_force">van der Waals bonds</a> between the long chains that make up asphalt.  The more mobile liquids act as something of a lubricant allowing the molecules to move around and flow away.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Material-Tests">Material Tests<a class="anchor-link" href="#Material-Tests">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Material%20Tests.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The main material tests that are relevant to asphalt mixes are listed here.</p>
-<ul>
-<li>Wear Durability Related<ul>
-<li>Penetration - Relates to the hardness of a solid sample.</li>
-<li>Viscosity - Relates to the coating capability during mixing also relates to cracking and rutting susceptibility.</li>
-<li>Ductility - Relates to the flexibility and the likelihood of rutting of the final pavement.</li>
-</ul>
+<li><p>$d$ is the width of the beam, in units of $in$</p>
 </li>
-<li>Flash Point - This is used to determine the temperature at which the mis will ignite. Some cutback mixes have a flash point as low as 80$^\circ$F with some mixes.</li>
-<li>Solubility - A sample of asphalt is dissolved to determine the amount of contaminates it contains.</li>
-<li>Kinematic Viscosity - This is only used for cutback mixes to determine the grade of the mixture.</li>
-<li>Distillation - This is used to verify the amount of solvents used in a cutback mix. </li>
-<li>Water - Used to determine if there is water contamination.</li>
+<li>$A$ is the cross sectional area of the beam, in units of $in^2$ </li>
+<li>$S$ is the section modulus of the beam, in units of $in^3$ (or $in^3/ft$ for plywood)</li>
+<li><p>$I$ is the moment of inertia of the beam, in units of $in^4$ (or $in^4/ft$ for plywood)</p>
+</li>
+<li><p>$F_b'$ is the maximum allowable bending stress of the beam, in units of $psi$</p>
+</li>
+<li>$F_v'$ is the maximum allowable shear stress in the beam, in units of $psi$</li>
+<li>$F_s'$ is the maximum allowable rolling shear stress in the panel, in units of $psi$</li>
+<li>$E'$ is the adjusted Young's modulus of the beam's material, in units of $psi$</li>
+<li>$Ib/Q$ is the rolling shear constant of the panel, in units of $in^2/ft$</li>
 </ul>
-<p>Other test apply to asphalt mixes that are made as emulsions with water acting as the solvent.  The details of each of these tests would be covered in a pavement design class.</p>
 
 </div>
 </div>
-</div></section>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">Wet</span> <span class="o">=</span> <span class="k">True</span>
+<span class="n">lumber_grade</span> <span class="o">=</span> <span class="s">&quot;No.2 Douglas Fir-Larch&quot;</span>
+<span class="n">Plywood</span> <span class="o">=</span> <span class="s">&#39;3/4&quot; Plyform Class I&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Older_Classes/Temp_struc.py
+<span class="n">ply</span> <span class="o">=</span> <span class="n">Plyform</span><span class="p">()</span> <span class="c">#S-2 Grade 2 (Dry)</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">nom_thick</span><span class="o">=</span><span class="s">&#39;3/4&#39;</span>
+<span class="c">#grade = &#39;S-1-&#39;</span>
+<span class="c">#ply.Grade = grade + (&#39;Wet&#39; if Wet else &#39;Dry&#39;)</span>
+<span class="c">#ply.Group = 1</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Plywood</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3/4&quot; Plyform Class I
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -610,7 +539,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Cost-Examples">Cost Examples<a class="anchor-link" href="#Cost-Examples">&#182;</a></h2>
+<h2 id="Plywood-Properties">Plywood Properties<a class="anchor-link" href="#Plywood-Properties">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -620,9 +549,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Cost%20Examples.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Plywood%20Properties.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
 </div>
 </div>
@@ -632,20 +561,78 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Asphalt paving is only built by contractors.  As such the price is determined by the job.  Commonly it has been priced as a fixed bid or per unit length.  Some examples of costs per mile from the <a href="http://www.artba.org/about/transportation-faqs/#20">American Road and Transportation Builders Association</a> are listed below.</p>
-<blockquote><ul>
-<li>Construct a new 2-lane undivided road – about \$2-\$3 million per mile in rural areas, about \$3-\$5 million in urban areas.</li>
-<li>Construct a new 4-lane highway — \$4-\$6 million per mile in rural and suburban areas, \$8-\$10 million per mile in urban areas.</li>
-<li>Construct a new 6-lane Interstate highway – about \$7 million per mile in rural areas, \$11 million or more per mile in urban areas.</li>
-<li>Mill and resurface a 4-lane road – about \$1.25 million per mile.</li>
-<li>Expand an Interstate Highway from 4 lanes to 6 lanes – about \$4 million per mile.</li>
-</ul>
-</blockquote>
-<p>There is also a link to some <a href="ftp://ftp.dot.state.fl.us/LTS/CO/Estimates/CPM/summary.pdf">Generic Cost Per Mile Models</a> put out by the Florida Department of Transportation (FDOT) that list some more precise example costs.</p>
+<p>From Table 12 of <a href="http://www.apawood.org/SearchResults.aspx?q=v345&tid=1">APA's Design/Construction Guide: Concrete Forming</a> we can find the section properties.  We can get the material properties from Table 13, but you need to be aware that this table has a $C_D$ of $1.25$ <strong>already</strong> applied.  To adjust for the fact that we will be reusing these forms multiple times ($C_D = 1.0$) we need to divide these stresses by $1.25$.  Additionally, since we are calculating our defections based on bending, we will use $E$ for the modulus of elasticity.  We don't need to worry about a wet service factor since it is already applied to all the values.</p>
+<p>Another place to look up these material properties is in the Formwork text in the header of Table 7-2.  That table is split into two halves. The half on the left is for $C_D = 1.25$, and the half on the right is for $C_D= 1.0$.  Again the wet service factor has already been applied.</p>
 
 </div>
 </div>
-</div></section>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">ply</span><span class="o">.</span><span class="n">I</span> <span class="o">=</span> <span class="mf">0.199</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="mf">0.455</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">Ib_Q</span> <span class="o">=</span> <span class="mf">7.187</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">F_b</span> <span class="o">=</span> <span class="mi">1930</span><span class="o">/</span><span class="mf">1.25</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">E</span> <span class="o">=</span> <span class="mi">1650000</span> <span class="c">#not adjusted by C_D</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">F_s</span> <span class="o">=</span> <span class="mi">72</span><span class="o">/</span><span class="mf">1.25</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">ply</span><span class="o">.</span><span class="n">show_props</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\text{From the Plywood Properties Tables:}$$ $$t_{nom} = 3/4"$$ $$A = 2.884 (in^2/ft)$$ $$I = 0.199 (in^4/ft)$$ $$S = 0.455 (in^3/ft)$$ $$Ib/Q = 7.187 (in^2/ft)$$ $$F_b = 1544.0 psi$$ $$F_s = 57.600 psi$$ $$E = 1.650E+06 psi$$ $$C_D = 1.0$$ $$strong = True$$ 
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">P</span>
+<span class="c">#w = 730</span>
+<span class="n">stud_spacing</span> <span class="o">=</span> <span class="n">board_test</span><span class="p">(</span><span class="n">ply</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">plywood</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -654,7 +641,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Material-Sources">Material Sources<a class="anchor-link" href="#Material-Sources">&#182;</a></h2>
+<h2 id="Plyform-Span-Limits">Plyform Span Limits<a class="anchor-link" href="#Plyform-Span-Limits">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -664,9 +651,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Material%20Sources.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Plyform%20Span%20Limits.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
 </div>
 </div>
@@ -676,8 +663,57 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Asphalt_plant"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lb-asphalt-plant-structure.jpg/760px-Lb-asphalt-plant-structure.jpg" alt = "Asphalt plant image" Title="Asphalt Plant"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>Asphalt is provided by suppliers at asphalt batch plants.  This is where they combine the asphalt left over from crude oil distillation with aggregate.  It is either done by heating the asphalt, dissolving the asphalt with a solvent, or emulsifying it with water.  Once the asphalt is liquid it can be combined with the aggregate.  After it is combine it is shipped via truck to the road construction site.</p>
-<p>*(<a href="https://www.youtube.com/watch?v=jopbWAAi2ik">Simple video</a> about asphalt paving by How it is Made.  I cannot say anything for their camera work.)</p>
+<p>We can now determine the span limits for the Plyform.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">stud_spacing</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\text{For a pressure of }1500 psf \text{ the line load equals }  1500 plf $$ 
+${}$
+ $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1544 psi  \times 0.455 in^3 }{ 1500 plf }} =7.49" \text{ (due to bending)}$$ 
+${}$
+ $$L = \frac{20 \times F_s'}{w}\times \frac{I b }{Q} =\frac{20 \times 58 psi }{ 1500 plf }\times  7.187 in^2  = 5.52" \text{ (due to rolling shear)}$$ 
+${}$
+ $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.65E+06 psi  \times  0.199 in^4 }{ 1500 plf }} =10.19" \text{ (for }\Delta = L/360 \text{)}$$ 
+${}$
+ $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.65E+06 psi  \times  0.199 in^4 }{ 1500 plf }} =12.42" \text{ (for }\Delta = 1/16" \text{)}$$ 
+${}$
+ $$\text{The maximum clear span between supports is 5.52".}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the wall form presentation the span limits were measured from center to center spacing.  This is because the studs were on edge, and the clear span between the studs was relatively large, in comparison to half the stud width $(\frac{3}{4}")$.  In this case the studs are on the flat and the clear span $5.5"$ is on the same order of magnitude as the width of the stud $3.5"$.  That is why we only need to use the clear span measurement.</p>
+<p>Our clear span of $5.5" < 5.52"$ so we the spacing is good.</p>
 
 </div>
 </div>
@@ -690,7 +726,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Examples-of-Installation-Tools">Examples of Installation Tools<a class="anchor-link" href="#Examples-of-Installation-Tools">&#182;</a></h2>
+<h2 id="Loads-and-Allowable-Stresses">Loads and Allowable Stresses<a class="anchor-link" href="#Loads-and-Allowable-Stresses">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -700,9 +736,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_4/Asphalt/Asphalt-Examples%20of%20Installation%20Tools.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Loads%20and%20Allowable%20Stresses.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
 </div>
 </div>
@@ -712,9 +748,227 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Paver_%28vehicle%29"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/AF-asphalt-laying-machine.jpg/500px-AF-asphalt-laying-machine.jpg" alt = "Asphalt paver image" Title="Asphalt Paver"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a><a href = "https://en.wikipedia.org/wiki/Road"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Road_building-Hungary-1.jpg/440px-Road_building-Hungary-1.jpg" alt = "Road roller image" Title="Road Roller"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a><a href = "https://en.wikipedia.org/wiki/Road"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Motorway_construction_in_Ireland.JPG/440px-Motorway_construction_in_Ireland.JPG" alt = "Road paving contruction image" Title="Road Construction"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a>
-Though you are unlikely to be installing any asphalt pavement personally, if you did, you are likely to need a way to spread it, and a way to compact it.  There is also extensive work necessary in the preparation of the surface below the top later.  This is not something you can really do without a contractor if the paving is going support vehicular traffic.</p>
-<p>Finally the CSI number for pavement in the MasterFormat is in division 2 and starts at <a href="http://www.constructionnotebook.com/ipin2/MFDivisions.asp?Start=02700&End=02800">02700</a>.</p>
+<p>We now need to calculate the line load to determine the clamp spacings.</p>
+
+</div>
+</div>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">w_</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="p">(</span><span class="mf">5.5</span><span class="o">+</span><span class="mf">3.5</span><span class="p">)</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span> <span class="c">#MANUALLY ENTERED THE STUD SPACING OF 5.5&quot;</span>
+<span class="n">w</span><span class="o">=</span><span class="n">w_</span><span class="p">[</span><span class="s">&#39;value&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">w_</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 1500 psf \times 9.0" \times \frac{1 ft}{12 in}$$$$w = 1125.00 plf$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">stud</span><span class="o">=</span><span class="n">two_by_four</span><span class="p">()</span> 
+<span class="n">stud</span><span class="o">.</span><span class="n">F_b</span> <span class="o">=</span> <span class="mi">900</span> <span class="c">#psi</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">F_v</span> <span class="o">=</span> <span class="mi">180</span> <span class="c">#psi</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">F_c_p</span> <span class="o">=</span> <span class="mi">625</span> <span class="c">#psi</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">E</span> <span class="o">=</span> <span class="mi">1600000</span> <span class="c">#psi</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">d</span><span class="p">,</span> <span class="n">stud</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">stud</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="n">stud</span><span class="o">.</span><span class="n">d</span> <span class="c">#lay it on the flat</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">C_F</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">C_fu</span> <span class="o">=</span> <span class="mf">1.1</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">C_M</span><span class="o">.</span><span class="n">wet</span><span class="o">=</span><span class="n">Wet</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="n">stud_spacing</span><span class="p">[</span><span class="s">&#39;value&#39;</span><span class="p">]</span> <span class="c">#for C_r</span>
+<span class="n">stud</span><span class="o">.</span><span class="n">connected</span> <span class="o">=</span> <span class="k">True</span> <span class="c">#for C_r</span>
+<span class="n">clamp_spacing</span> <span class="o">=</span> <span class="n">board_test</span><span class="p">(</span><span class="n">stud</span><span class="p">,</span><span class="n">w</span><span class="p">,</span> <span class="n">wale</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;E = {:.3E} psi&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">stud</span><span class="o">.</span><span class="n">E</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>E = 1.600E+06 psi
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After looking in Table 4A in the Supplement and Table 4.3.1 in the Timber NDS we can calculate the allowable stresses.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">stud</span><span class="o">.</span><span class="n">reveal</span><span class="p">()[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$F_b'=F_b \times C_D \times C_F \times C_M \times C_{fu} \times C_r$$ $$F_b'=900 psi\times 1 \times 1.5 \times 0.85 \times 1.1 \times 1.15 $$ $$F_b' = 1451.59 psi$$ 
+${}$
+ $$F_v'=F_v \times C_D \times C_M $$ $$F_v'=180 psi \times 1 \times 0.97 $$ $$F_v' = 174.60 psi$$ 
+${}$
+ $$F_{c,\perp}'=F_{c,\perp} \times C_M $$ $$F_{c,\perp}'=625 psi\times 0.67 $$ $$F_{c,\perp}' = 418.75 psi$$ 
+${}$
+ $$E'=E \times C_M $$ $$E'=1.6e+06 psi\times 0.9 $$ $$E' = 1.44E+06 psi$$ 
+${}$
+ 
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Clamp-Spacings">Clamp Spacings<a class="anchor-link" href="#Clamp-Spacings">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Clamp%20Spacings.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After getting the Y-Y section properties for the studs in Table 4B, we can calculate the span limits for the bottom clamp spacing.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">clamp_spacing</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\text{For a line load of }w =  1125 plf $$ 
+${}$
+ $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1452 psi  \times 1.312 in^3 }{ 1125 plf }} =14.25" \text{ (due to bending)}$$ 
+${}$
+ $$L = 13.33 \times \frac{F_v' b d}{w} + 2 d = 13.33 \times \frac{175 psi \times 3.50" \times 1.50" }{ 1125 plf } + 2 \times 1.50"  = 13.86"  \text{ (due to shear)} $$ 
+${}$
+ $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.44E+06 psi  \times  0.984 in^4 }{ 1125 plf }} =18.25" \text{ (for }\Delta = L/360 \text{)}$$ 
+${}$
+ $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.44E+06 psi  \times  0.984 in^4 }{ 1125 plf }} =19.24" \text{ (for }\Delta = 1/16" \text{)}$$ 
+${}$
+ $$\text{The maximum spacing between clamps is 13.86".}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At $10'$ ($1500 psf$) in our clamp spacing chart, for $24"$ column, we have a spacing limit of no more than $12"$ required for our column clamps.  Because the chart has a smaller spacing, we can simply use the spacings indicated, and we will be conservative with our stud supports.</p>
+<p>From top down:</p>
+<p>$\text{Clamp Spacings} = 2", 28", 24", 20", 18", 12", 12"$</p>
 
 </div>
 </div>
@@ -727,7 +981,7 @@ Though you are unlikely to be installing any asphalt pavement personally, if you
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1>
+<h3 id="Wooden-Yokes">Wooden Yokes<a class="anchor-link" href="#Wooden-Yokes">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -736,16 +990,107 @@ Though you are unlikely to be installing any asphalt pavement personally, if you
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://ufl.instructure.com/courses/">UF Class website</a></p>
-<p><a href="http://damontallen.github.io/Construction-materials/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%208/Column%20Forms/Wooden%20Yokes.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If we were using wooden yokes, we would need to determine the load on the corner fasteners of the yoke based on our $13.86"$ spacing.  This load is approximately:</p>
+<p>$F = \text{Pressure} \times \text{Tributary Area} \times \sqrt{2}$</p>
+<p>The $\sqrt{2}$ is because the load is coming from two sides of the form.</p>
+<p>$\text{Tributary Area} = \frac{1}{2} \text{Concrete Width}\times\text{Clamp Spacing}$  so,</p>
+<p>$F = 1500 psf \times \frac{20"}{2} \times \frac{1 ft}{12 in}\times 13.86"\times \frac{1 ft}{12 in} \times \sqrt{2}$</p>
+<p>$F = 2042 lbs$</p>
+<p>That is too high for a nailed connection so we would need to bolt it.  Additionally, we would need to determine if 2x4 yokes are even strong enough to carry the line load of $w = 1500 psf \times 13.86" \times \frac{1 ft}{12 in} = 1733 plf$ over the span of $24.5"$.   We can see that it probably would not be adequate, since our maximum stud support spacing, on the flat, is $13.86"$.  We would either need to reduce our yoke spacing or use larger material.</p>
+<p>Additionally this is just for the bottom yoke.  We would need to recalculate everything for every yoke above that one.  You can see why column clamps are so popular.</p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="References:">References:<a class="anchor-link" href="#References:">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://ufl.instructure.com/courses/">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
+<p><a href="http://damontallen.github.io/Construction-Lectures-Fall-2014/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
 <p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
-<p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-materials/blob/master/Resources.ipynb">Complete Software List</a></p>
-<h2 id="Report-any-problems">Report any problems<a class="anchor-link" href="#Report-any-problems">&#182;</a></h2><p><a href="https://github.com/damontallen/Construction-materials/issues">Issues</a> Please report any problems that occurred during the viewing of this or any other lecture.</p>
-<p>Alternative Reporting - Email <a href="mailto:damontallen@gmail.com?Subject=Construction%20Materials%20Lecture%20Problems" target="_top">damontallen@gmail.com</a></p>
+<p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>
 
 </div>
 </div>
-</div></section>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">yoke</span><span class="o">=</span><span class="n">two_by_four</span><span class="p">()</span> 
+<span class="n">yoke</span><span class="o">.</span><span class="n">F_b</span> <span class="o">=</span> <span class="mi">900</span> <span class="c">#psi</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">F_v</span> <span class="o">=</span> <span class="mi">180</span> <span class="c">#psi</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">F_c_p</span> <span class="o">=</span> <span class="mi">625</span> <span class="c">#psi</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">E</span> <span class="o">=</span> <span class="mi">1600000</span> <span class="c">#psi</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">C_F</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">C_fu</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">yoke</span><span class="o">.</span><span class="n">C_M</span><span class="o">.</span><span class="n">wet</span><span class="o">=</span><span class="n">Wet</span>
+<span class="n">yoke_spacing</span> <span class="o">=</span> <span class="n">board_test</span><span class="p">(</span><span class="n">yoke</span><span class="p">,</span><span class="n">w</span><span class="p">,</span> <span class="n">wale</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<span class="n">yoke_spacing</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\text{For a line load of }w =  1125 plf $$ 
+${}$
+ $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1148 psi  \times 3.062 in^3 }{ 1125 plf }} =19.35" \text{ (due to bending)}$$ 
+${}$
+ $$L = 13.33 \times \frac{F_v' b d}{w} + 2 d = 13.33 \times \frac{175 psi \times 1.50" \times 3.50" }{ 1125 plf } + 2 \times 3.50"  = 17.86"  \text{ (due to shear)} $$ 
+${}$
+ $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 1125 plf }} =32.11" \text{ (for }\Delta = L/360 \text{)}$$ 
+${}$
+ $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 1125 plf }} =29.40" \text{ (for }\Delta = 1/16" \text{)}$$ 
+${}$
+ $$\text{The maximum spacing between clamps is 17.86".}$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
     </section>
 </div>
 </div>

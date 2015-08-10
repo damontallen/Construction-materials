@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Materials slides</title>
+<title>Week 2 - Tributary Width vs Tributary Area slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -140,6 +140,28 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
+<style type="text/css">
+    /*
+Placeholder for custom user CSS
+
+mainly to be overridden in profile/static/custom/custom.css
+
+This will always be an empty file in IPython
+*/
+
+/*body{
+position: static;
+}
+#menubar, #header, #maintoolbar {
+display:none !important;
+}*/
+
+/*
+.ipynb_ruler {
+    border-color: #DFDFDF;
+}*/
+
+    </style>
 
 
 <style type="text/css">
@@ -222,8 +244,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Materials">Materials<a class="anchor-link" href="#Materials">&#182;</a></h1><p><strong style="color:red">All audio paths need to be switched from Week_0 to Week_1.</strong></p>
-
+<h1 id="Tributary-Width-vs-Tributary-Area">Tributary Width vs Tributary Area<a class="anchor-link" href="#Tributary-Width-vs-Tributary-Area">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -232,8 +253,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Embedded YouTube Video</p>
-
+<iframe width="420" height="315" src="//www.youtube.com/embed/kpJGulsK4Cg" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 </div></section>
@@ -245,7 +265,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-Show-Table-of-Contents">Slide Show Table of Contents<a class="anchor-link" href="#Slide-Show-Table-of-Contents">&#182;</a></h2>
+<h2 id="Tributary-Area">Tributary Area<a class="anchor-link" href="#Tributary-Area">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -255,9 +275,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="mp3 Path"
-     type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%202/Trib%20Area%20vs%20Width/Tributary%20Area.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or files are missing.</p>
 </audio>
 </div>
 </div>
@@ -267,24 +287,35 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>In many cases a uniform spacing of members is used throughout the framing plan.  This example is designed to illustrate the <em>concept</em> of tributary area rather than typical framing layouts.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="http://imgur.com/ungiNf8"><img src="http://i.imgur.com/ungiNf8.png" title="Tributary Area" style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\text{Trib. A} = \text{trib. width} \times \text{span}$</p>
 <ul>
-<li><a href="#">Materials</a><ul>
-<li><a href="#/3">Introduction</a></li>
-<li><a href="#/4">Material Properties</a></li>
-<li><a href="#/5">Young's Modulus</a></li>
-<li><a href="#/6">Plastic Behavior</a></li>
-<li><a href="#/7">Ultimate Strength</a></li>
-<li><a href="#/8">Energy Absorption - Toughness</a></li>
-<li><a href="#/9">Fracture Point</a></li>
-<li><a href="#/10">Rupture</a></li>
-<li><a href="#/11">Shear Failure</a></li>
-<li><a href="#/12">Deformations</a></li>
-<li><a href="#/13">Buckling</a></li>
-<li><a href="#/14">Connections</a></li>
-<li><a href="#/15">Summary</a></li>
-<li><a href="#/16">References</a></li>
-</ul>
-</li>
+<li>Joist J1 - $\text{Trib. A} = 2 ft \times 12 ft = 24 ft^2$</li>
+<li>Joist J2 - $\text{Trib. A} = 2 ft \times 14 ft = 28 ft^2$</li>
+<li>Girder G1 - $\text{Trib. A} = \left(\frac{12 ft}{2} + \frac{14 ft}{2}\right) \times 20 ft= 260 ft^2$</li>
+<li>Girder G2 - $\text{Trib. A} = \left(\frac{12 ft}{2} + \frac{14 ft}{2}\right) \times 24 ft = 312 ft^2$</li>
+<li>Column C1 - $\text{Trib. A} = \left(\frac{12 ft}{2} + \frac{14 ft}{2}\right) \times \left(\frac{20 ft}{2} + \frac{24 ft}{2}\right)  = 286 ft^2$</li>
+<li>Exterior column C2 - $\text{Trib. A} = \left(\frac{12 ft}{2}\right) \times \left(\frac{20 ft}{2} + \frac{24 ft}{2}\right) = 132 ft^2$</li>
+<li>Corner column C3 - $\text{Trib. A} = \left(\frac{14 ft}{2}\right) \times \left(\frac{20 ft}{2}\right) = 70 ft^2$</li>
 </ul>
 
 </div>
@@ -298,7 +329,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2>
+<h2 id="Tributary-Width">Tributary Width<a class="anchor-link" href="#Tributary-Width">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -308,9 +339,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Introduction.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%202/Trib%20Area%20vs%20Width/Tributary%20Width.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
+ <p>Your user agent does not support the HTML5 Audio element or files are missing.</p>
 </audio>
 </div>
 </div>
@@ -320,46 +351,8 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://commons.wikimedia.org/wiki/File:HK_Central_Piers_construction_site_building_material_tiles_view_Wan_Chai.JPG"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/HK_Central_Piers_construction_site_building_material_tiles_view_Wan_Chai.JPG/800px-HK_Central_Piers_construction_site_building_material_tiles_view_Wan_Chai.JPG" alt = "Construction Material image" Title="Construction Material" style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a>Material properties are physical ones and in order to understand them you need to understand the physical terms there are based on.  Since there are at least some of you who are currently taking Physics for the first time I need to introduce you to some vocabulary.  I am not going to be getting too deep into the meanings since that is what your Physics class is for but I do need you to be aware prior to when it is covered elsewhere.  Additionally I will be discussing some terms that are beyond the basics Physics courses and I will be spending a little more time with those but it is not necessary that you fully understand them at this point in your college career.  You will see them again.</p>
-<p>Further more there will be material properties that I do not discuss since they are not relevant to this course or even the construction industry as a whole.  These will be introduced (if at all) in your courses on Physics and Chemistry (if you take it).</p>
-<h3 id="Units-of-Measure">Units of Measure<a class="anchor-link" href="#Units-of-Measure">&#182;</a></h3><p>Just to preemptively clarify the meaning of some of the units and abbreviations I'm going to be using I'm listing them here along with some of their definitions.  I'm not defining the many of the metric units since I'm not going to be using them frequently in examples and you will be learning all about them in Physics.</p>
-<table>
-<tr><th>Distance</th><th>Force</th><th>Pressure</th></tr>
-<tr>
-<td><ul>
-        <li>in - inches</li>
-        <li>ft - feet</li>
-        <li>mm - millimeters</li>
-        <li>m - meters</li>
-    </ul>
-</td>
-<td><ul>
-        <li>lb or lbs - pounds</li>
-        <li>kips - 1,000 pounds</li>
-        <li>N - Newtons</li>
-        <li>kN - 1,000 Newtons</li>
-    </ul>
-</td>
-<td><ul>
-        <li>psi - pounds per square inch $\left(\frac{lb}{in^2}\right)$</li>
-        <li>Pa - Newtons per square meter $\left(\frac{N}{m^2}\right)$</li>
-        <li>ksi - kips per square inch $\left(\frac{kip}{in^2}\right)$</li>
-        <li>kPa - kiloNewtons per square meter $\left(\frac{kN}{m^2}\right)$</li>
-    </ul>
-</td></tr>
-</table>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Material-Properties">Material Properties<a class="anchor-link" href="#Material-Properties">&#182;</a></h2>
+<p><a href="http://imgur.com/c8Sv3kI"><img src="http://i.imgur.com/c8Sv3kI.png" title="Tributary Width" style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
+
 </div>
 </div>
 </div>
@@ -368,25 +361,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Material%20Properties.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The physical quantities that are used define material properties, from a usability point of view, can mostly be developed from two physical quantities, force and length or distance.  An example of force is weight.  It is the quantity that can cause an object to begin to move.  Another property of Physics is energy and for what we will be looking at energy can be thought of as a force being applied continuously over a distance.  So if force is $F$ and distance is $L$ then energy is just $E = F \times L$.  There are other ways to calculate energy but the units of energy always work out to be a force unit times a distance unit, i.e. foot-pounds or Newton-meters.  This is also the same units as work $W$ and in some sense they are just different sides of the same coin.  Since $E$ is reused for other values I will generally use $W$ when referring to energy, though I will try to point that out every time.</p>
-<p>Stress is used frequently when describing material properties.  Stress is a pressure measurement and pressure is just a force divided by the area it is applied over.  Stress is referred to by several different variable depending on the context.  In Physics it will probably be introduces as $\sigma$ (sigma).  However in construction you will see it in several forms, $\sigma$ for stress perpendicular to a plane known as normal stress or axial stress, and $\tau$ (tau) for stress parallel to a plane known as shear stress. There are even more specific versions of these for specific materials like $f_b$ in timber if it is a normal stress due to bending, $f_c$ is the normal stress due to axial compression, $f_t$ is the axial stress due to tension, $f_v$ is the shear stress, and there are others.  The point is that it is a very common property.</p>
-<p>There is a physical law you will learn about that I'm sure you have already heard of, "for every action there is an equal and opposite reaction".  This is used to relate another material property to stress and that is strain.  Stepping back a moment if I apply a force to down on a spring on a table how does this apply?  Unless the spring is moving then it must be pushing back on me.  How does it accomplish this?  It deforms a little; it store up the energy I used compressing it.  This energy remains stored until I release the spring.  How does this relate to the material property of stain?  Strain is change in length divided by original length.  Strain, however, does not refer to springs but rather solid material.  If instead of a spring I have a block of aluminum on the table, when I pushed down on it it would ever so slightly change in length like the spring.  If this change in length in the aluminum is divided by the block's original length, it is know as the strain in the aluminum and the symbol is $\varepsilon$ (epsilon or sometimes $\epsilon$).</p>
-<p>The units of strain are a little unusual, $\left(\tfrac{\text{length}}{\text{length}}\right)$, and these should cancel out.  However just to be clear when writing values for strain this fraction is often not simplified.  You will see units of $\tfrac{\text{in}}{\text{in}}$, or $\tfrac{\text{mm}}{\text{mm}}$ written out in calculations.  This helps the reader understand that this is a measure of strain and not just a constant.</p>
-<p>There are other versions of strain which have different symbols like shear stain ($\gamma$) but for this class $\varepsilon$ is as much as you need to be aware of.</p>
-<p>With these terms discussed we can now cover the rest of the physical properties that you need to know.</p>
+<p>If the members are equally spaced, because tributary width is is half the distance to the next member on one side and half the distance on the other side, the tributary with is equal to the member spacing.</p>
 
 </div>
 </div>
@@ -399,7 +374,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Young's-Modulus">Young's Modulus<a class="anchor-link" href="#Young's-Modulus">&#182;</a></h2>
+<h2 id="References:">References:<a class="anchor-link" href="#References:">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -408,1316 +383,59 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Young's%20Modulus.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
+<p><a href="https://ufl.instructure.com/courses/">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
+<p><a href="http://damontallen.github.io/Construction-Lectures-Fall-2014/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
+<p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
+<p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>
+
 </div>
 </div>
 </div><div style=display:none>
     
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="o">%</span><span class="k">run</span> Modulus.py
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Young's modulus or elastic modulus was named after British scientist Thomas Young.  Young was not the first to work with the elastic modulus but he was the first to widely publicize it.  The elastic modulus is also denoted with $E$ (though you may see $Y$ in Physics).  Since the elastic modulus is used substantially more often in describing material properties you should assume that if you see $E$ that is what I am referring to.  If I absolutely must use $E$ to refer to energy I will be sure to point it out.</p>
-<p>Now back to the elastic modulus.  The elastic modulus is just the ratio of how much stress is required to produce a given amount of strain in a specific material.</p>
-$$\text{Elastic modulus} = \frac{\text{Stress}}{\text{Strain}}$$$$\text{or just}$$$$E = \frac{\sigma}{\varepsilon}$$<p>For a most material there is a range over which there is the linear relationship between stress and strain.</p>
-$$\sigma = E \times \varepsilon$$$$or$$$$\varepsilon = \frac{\sigma}{E} $$<p>The elastic modulus of steel is $29,000,000\text{ psi}$.  Below I've plotted the elastic region of A36 steel to demonstrate the relationship.</p>
+<p>CSS stylesheet</p>
+<head>
+<style>
+important {font:italic bold 16px arial;}
+.missing {color:Red}
+fragment {color:LightBlue;}
+subslide {color:DarkBlue;}
+
+.rgt {float:right;}
+
+.lt {float:left;}
+
+.cnt {text-align:center; vertical-align:text-top;}
+
+.box { border:1px solid blue; float:left; margin-right:3px;}
+
+.max {max-width:300px; max-height:300px;}
+
+.fix {max-height:200px; max-width:200px;}
+
+</style>
+</head>
+
+
+<pre><code>/* class = "max box" for img tags
+
+&lt;audio controls data-autoplay&gt;
+ &lt;source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Intro/FILE%20NAME.mp3"
+         type='audio/mp3'&gt;
+ &lt;p&gt;Your user agent does not support the HTML5 Audio element.&lt;/p&gt;
+&lt;/audio&gt;&lt;a&gt;&lt;/a&gt;
+
+*/
+max box == style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">modulus</span><span class="p">(</span><span class="s">&quot;yield&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-EREREZEJ5P8D96oIoUuMJ+UAAAAASUVORK5CYII=
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The limit to the elastic behavior in a metallic material is know as the yield point.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Plastic-Behavior">Plastic Behavior<a class="anchor-link" href="#Plastic-Behavior">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Plastic%20Behavior.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We will be studying about plastic in this course however the term "plastic behavior" refers to how some metals behave after reaching their yield point.  Once the yield point is reached the material (steel in this case) will continue to strain (or deform) without the addition of any more stress.  This continuous deformation is what is known as plastic behavior.  This can occur to a much greater stain than the level of stain at the yield point.  In the figure you can see the limit of this purely plastic range.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">modulus</span><span class="p">(</span><span class="s">&#39;plastic&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is a really desirable behavior.  If a beam is about to collapse if it have a plastic range then it will substantially deform before its ultimate failure.  This can be thought of as a early warning before collapse.  The tendency of a material to undergo plastic deformation is known as its ductility.  A material like steel is very ductile.  A material that have very low or no ductility is known as brittle.  A piece of chalk is brittle.  If you try to bend it it will not visibly deform before it breaks.  If you used big enough pieces of chalk you could build a building out of it but you would have no warning if you were overloading.  No one would want to use it out of fear that it could collapse at any time.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ultimate-Strength">Ultimate Strength<a class="anchor-link" href="#Ultimate-Strength">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Ultimate%20Strength.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The point at which a material cannot ave any additional stress applied to it without failure is known as that material's ultimate strength.  Some metals, like some types of steel, will actually start to strengthen after the plastic limit.  This is known as strain hardening.  It is one way that versions of steel are made stronger.  In the figure a complete idealized stress strain relationship for A36 steel is shown.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">modulus</span><span class="p">(</span><span class="s">&#39;ultimate&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>At the limit of this stress  One other important behavior is that is the stress was removed the strain would not go back down to zero.  Rather the reduction of stress and strain would parallel the elastic portion of the graph.  The deformation that remained after the stress was removed is known as the permanent set.  In the figure stress removal would just about be a vertical line straight down.  This would mean that the permanent set is about $ 0.20 \frac{in}{in}$.  Any loading on the sample after that would cause the stress to go right back up that vertical line and not display the previously seen plastic behavior.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Energy-Absorption---Toughness">Energy Absorption - Toughness<a class="anchor-link" href="#Energy-Absorption---Toughness">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Energy%20Absorption%20-%20Toughness.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Toughness is a measure of how much energy can be absorbed by a volume of material before it fails.  Energy, as you remember, has units of force times distance.  It can be calculated by finding the area under the ultimate stress-strain curve down to the strain axis.  This may be an odd concept, finding the area of a shape who's sides have different units.  When trying to understand it first just think of a rectangle that has units of $\frac{in}{in}$ on one side and units of $psi$ on the other.  The units are just another part of each sides length.  As such you just need to multiply the units together to find the units of the area.  In this case $\frac{in}{in}\times psi$.</p>
-<p>Rather than going through a complicated calculation to prove that, let's just look and see that the units of energy per volume work out to be the same as stress times strain.  This may be something you have never seen before but it is a quick way to check if a calculation is possibly right.  If you assume all the numerical values in a problem are one but leave the units in place you should be able, through algebraic manipulation, to prove or disprove that both sides of an equation have the same units.  If it works out it doesn't prove that the equation is right but if it doesn't work out then it does prove the equation is wrong.  This is known as unit analysis.</p>
-<p>Let's set up the variables first and assume we are working in imperial units.
-$$\varepsilon \times\sigma = \frac{W}{V} $$</p>
-<p>where</p>
-<ul>
-<li>$\varepsilon$ - strain $\left(1 \frac{in}{in}\right)$</li>
-<li>$\sigma$ - stress $(1 psi)$</li>
-<li>$W$ - Work or Energy $(1 in \times lb)$</li>
-<li>$V$ - Volume $(1 in^3)$</li>
-</ul>
-<p>Let's substitute the the units in for the variables.  Since we are assuming all the numerical values are one we don't have to write them out.</p>
-$$\frac{in}{in}\times psi = \frac{in \times lb}{in^3} $$<p>Replace $psi$ with its definition.
-$$\frac{in}{in}\times \frac{lb}{in^2} = \frac{in \times lb}{in^3} $$
-Multiple through...
-$$\frac{in \times lb}{in \times in^2} = \frac{in \times lb}{in^3} $$
-Simplify...
-$$\frac{in \times lb}{in^3} = \frac{in \times lb}{in^3} $$
-The units match.  Again, this isn't a proof but it does show that the answer should be in the correct units when the calculation is done.  You will need more Physics and probably a little Calculus before I can show you a real proof.  For now you can just take my word for it, or read up on it <a href="https://en.wikipedia.org/wiki/Toughness">here</a>.  FYI $\int$ is a mathematic symbol for finding the area under a curve.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fracture-Point">Fracture Point<a class="anchor-link" href="#Fracture-Point">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Fracture%20Point.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The point of ultimate stress and strain of a material is known as its fracture point.  This is when the material actually reaches failure.  Depending on how you are determining the usable strength of a material you may or may not need to know this value.  If you plan to only use a material in the elastic range of its behavior then you won't need to know about this ultimate limit.  However if you are designing something that is allowed to suffer some damage when in use then this is a point on the stress-strain diagram you will need to know about.</p>
-<p>Just so you know most structures are designed now days with the expectation that they will suffer some damage in their life time.  It turns out that it is much cheaper to build that way.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Rupture">Rupture<a class="anchor-link" href="#Rupture">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Rupture.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>If a ductile material in a structure has reached its fracture point and fails, the failure is called a rupture.  This is actually a complicated concept that has many aspects.  Due to that I may just leave it for a future course.  However I may briefly discuss necking and rupture in the Steel lecture.</p>
-<p><a href = "https://en.wikipedia.org/wiki/Fracture"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/DuctileFailure.jpg/1600px-DuctileFailure.jpg" alt = "Ductile Failure image" Title="Post Necking Failure" style="max-width:300px; max-height:300px; border:1px solid blue; "/></a></p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Shear-Failure">Shear Failure<a class="anchor-link" href="#Shear-Failure">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Shear%20Failure.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Scissors"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Skalm_2.JPG/440px-Skalm_2.JPG" alt = "Image of scissors" Title="Shears" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>From one point of view shear failure may be the easiest to understand.  If a material is subjected to a shear force it is possible that the material can fail due to that loading.  In future courses you will learn about the complexities of this failure mode but for now you can think of it is a failure due to being sheared.</p>
-<p>The image below is of idealized deformation due to an applied shear stress ($\tau$).  Failure occurs when shear strain $\left(\gamma = \frac{\Delta l}{l} \right)$is excessive.</p>
-<p><a href = "https://en.wikipedia.org/wiki/Shear_stress"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Shear_stress_simple.svg/440px-Shear_stress_simple.svg.png" alt = "Shear stress image" Title="Shearing"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a>There is such a thing as the shear modulus $\left(G = \frac{\tau}{\gamma}\right)$ but since it has a relationship with the elastic modulus, it is seldom calculated separately.
-$$G = \frac{E}{2(1+\nu)}$$
-The one term in that equation you might not be familiar with is $\nu$ (nu) which is the symbol for the <a href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson's ratio</a>.  It is a measured constant like the elastic modulus and just represents the amount that a material expands laterally when it is compressed axially.  For context, a material that is non-compressible, i.e. does not change volume when compressed, will have a Poisson's ratio of 0.5.  The reason for this is that 50% of the material that is displaced due to vertical compression goes to the left and right while the other 50% pushes out the front and back.  Rubber is an example of a material that has a Poisson's ratio of close to 0.5.  In contrast steel has a Poisson's ratio in the range of 0.25 to 0.3 (it plays a role in necking).</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Deformations">Deformations<a class="anchor-link" href="#Deformations">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Deformations.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "https://en.wikipedia.org/wiki/Bending"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Beam_mode_6.gif/400px-Beam_mode_6.gif" alt = "Animation of flexing beam" Title="Bending" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>Excessive deformation can be another type of failure.  A material can be strong enough for the intended use case but still will be inadequate due to excessive deflections.  Consider the following.  If you made a second story floor out of rope it may very well be strong enough, however the amount or movement it would undergo when anyone tried to walk on it would render it unusable for any office work.</p>
-<p>That is a little extreme and there are other reasons, like brittleness of attached material, that may require limiting the deformations of a material.  Again, I'll leave further explanation for later courses.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Buckling">Buckling<a class="anchor-link" href="#Buckling">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Buckling.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Buckling is less of a material failure mode and more of a failure due to geometry but I thought I would mention it here since I am talking about failure modes.  However bucking is partially due to some of the material properties I've already listed, like the elastic modulus.</p>
-<p><a href = "https://en.wikipedia.org/wiki/Buckling"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Buckledmodel.JPG/440px-Buckledmodel.JPG" alt = "Buckling demonstration image" Title="Buckling Demonstration" style="max-width:300px; max-height:300px; border:1px solid blue; "/></a></p>
-<p>Either way I wanted it to be in your vocabulary even if you are not going to be learning more about it for a  couple of years.</p>
-<h3 id="Compression">Compression<a class="anchor-link" href="#Compression">&#182;</a></h3><p>One related mode of failure is crushing due to compression.  Crushing occurs when an element is short enough that it cannot buckle and the material strength is inadequate to prevent permanent deformation.  The deformation can be localized to the point of contact or it can be through the element.  We will get more into compressive failure when we look at concrete.</p>
-<p><em>(Spoilers: Though the failure mode most commonly associated with concrete overloading is compression, concrete in compression actually fails in tension.)</em></p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Connections">Connections<a class="anchor-link" href="#Connections">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Connections.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Connections can fail due to both geometric and material failures.  Examples of these include slip failure and bearing failure.  Slip failure is when a bolted connection allows the two connected elements to slide relative to each other.  Bearing failure occurs when the material pressing against the fasteners in a connection fails by deforming and allowing the connected elements to move relative to each other.  There are obviously other types of connection failures, like the fasteners themselves could be sheared off by the connected elements, or the material surrounding a fastener could tear away from the main portion of an element in a rupture type of failure.</p>
-<p><a href = "https://en.wikipedia.org/wiki/Hyatt_Regency_walkway_collapse"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hyatt_Kansas_City_Collapse.gif" alt = "Collapsed walkway image" Title="Walkway Wreckage" style="max-width:300px; max-height:300px; border:1px solid blue; "/></a></p>
-<p>One of the most famous connection failures was the Hyatt Regency walkway collapse.  The connection supporting the walkways was changed from the original design which resulted in a mush weaker connection.  It resulted in the death of 114 people and injured 216 more.  It was a failure of both material and geometry.</p>
-<p><a href = "https://en.wikipedia.org/wiki/Hyatt_Regency_walkway_collapse"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/HRWalkway.svg/500px-HRWalkway.svg.png" alt = "Walkway connection design image" Title="Walkway Connection" style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:10px;"/></a>
-<a href = "https://en.wikipedia.org/wiki/Hyatt_Regency_walkway_collapse"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Hyatt_Regency_collapse_support.PNG" alt = "Failed connection image" Title="Post Collapse" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_0/Materials/Materials-Summary.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To sum up, this is an overview of some of the material properties that we will see this semester.  It is not a complete list nor will every lecture about a particular material cover all of these properties and failure modes.  However, it is a good starting point for the course and it will provide a background for future discussions.</p>
-<p>I would like to point out that even for the properties that I've mentioned there are other variations and considerations that would need to be accounted for in a more advanced class.  Things like stain rate, temperature, and notch effects (also known as stress concentrations) all come into play when examining and material designing projects.  At this point though you only need to be aware that these terms exist and have some idea about their meanings.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://ufl.instructure.com/courses/">UF Class website</a></p>
-<p><a href="http://damontallen.github.io/Construction-materials/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
-<p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
-<p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-materials/blob/master/Resources.ipynb">Complete Software List</a></p>
-<h2 id="Report-any-problems">Report any problems<a class="anchor-link" href="#Report-any-problems">&#182;</a></h2><p><a href="https://github.com/damontallen/Construction-materials/issues">Issues</a> Please report any problems that occurred during the viewing of this or any other lecture.</p>
-<p>Alternative Reporting - Email <a href="mailto:damontallen@gmail.com?Subject=Construction%20Materials%20Lecture%20Problems" target="_top">damontallen@gmail.com</a></p>
-
-</div>
-</div>
-</div></section>
+    </div></section>
     </section>
 </div>
 </div>
