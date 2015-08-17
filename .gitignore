@@ -60,3 +60,7 @@ target/
 *.*~
 .ipynb_checkpoints
 backup/
+.~*
+
+# Working Files
+_*
