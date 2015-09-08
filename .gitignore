@@ -64,3 +64,4 @@ backup/
 
 # Working Files
 _*
+*.slides.html
