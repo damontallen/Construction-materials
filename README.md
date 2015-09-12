@@ -76,3 +76,7 @@ Notebooks are to be viewed as slide shows as seem on the github.io branch.
 
 * [Glass](http://nbviewer.ipython.org/github/damontallen/Construction-materials/blob/master/Glass.ipynb)
 * [Plastics](http://nbviewer.ipython.org/github/damontallen/Construction-materials/blob/master/Plastic.ipynb)
+
+## Extra
+
+* [Unit Conversions](http://nbviewer.ipython.org/github/damontallen/Construction-materials/blob/master/Units%20and%20Prefixes.ipynb)
