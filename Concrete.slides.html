@@ -489,7 +489,7 @@ Concrete is a composite material, consisting of cement and aggregate.  Once full
 $$E_c = w_c^{1.5} 33 \sqrt{f'_c}$$<p>Where:</p>
 <ul>
 <li>$E_c$ is the modulus of elasticity of concrete in psi</li>
-<li>$w_c$ is the unit weight of concrete in pounds per cubic foot ($lb/ft^3$}</li>
+<li>$w_c$ is the unit weight of concrete in pounds per cubic foot ($lb/ft^3$)</li>
 <li>$f'_c$ is the compressive strength of concrete in psi</li>
 </ul>
 <p>If you don't have the unit weight, then you are allowed to use the following.</p>
@@ -550,7 +550,7 @@ $$E_c = 57,000 \sqrt{f'_c}$$<p>In this case the unit weight is assumed to be app
 <p><a href = "https://en.wikipedia.org/wiki/Reinforced_concrete"> <img src="http://i.imgur.com/j6rodE0.jpg" alt = "Concrete compression stress vs strain image" Title="3,000 psi Concrete Stress vs. Strain"  style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>The limit to the strength of reinforced concrete is set to the load at which any portion of a member undergoes 0.003 in/in strain.  This amount of strain is defined as when concrete fails.  It is a fixed value.  This isn't even where the peak strength of concrete occurs at, but rather this is where concrete is considered to have lost its internal cohesion due to turning to ruble.  It leads to some complications in design, but through clever analysis these have been simplified.  The design process actually becomes easier by picking a fixed level of strain.</p>
 <p>However, the details of designing concrete are not what we are covering in this class so let's leave it at that.</p>
 <p>Additionally, the stress vs. strain diagram is only showing compression.  If that plot included tension stress you would see a small line that ends at about 1/10 the peak compression stress and that would be at $f_t$.  This value can be estimated with the modulus of rupture ($f_r$).</p>
-$$f_r = 7.5 \sqrt{f'_c}$$<p><a href="http://www.cement.org/for-concrete-books-learning/concrete-technology/concrete-construction/curing-in-construction"><img src="./Supporting Notebooks/Concrete/Strength_vs_Time.svg" alt = "Concrete strength vs cure time image" Title="Strength vs Curing"  style="max-width:400px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>Where both $f_r$ and $f'_c$ are in psi.  This is an empirical equation as apposed to a theoretical one and the units do not work out correctly since the constant 7.5 does not have the correct units shown.  There equations like this out there, and you'll just need to remember the units, or look them up.</p>
+$$f_r = 7.5 \sqrt{f'_c}$$<p><a href="http://www.cement.org/for-concrete-books-learning/concrete-technology/concrete-construction/curing-in-construction"><img src="http://i.imgur.com/llqmW3F.png" alt = "Concrete strength vs cure time image" Title="Strength vs Curing"  style="max-width:400px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>Where both $f_r$ and $f'_c$ are in psi.  This is an empirical equation as apposed to a theoretical one and the units do not work out correctly since the constant 7.5 does not have the correct units shown.  There equations like this out there, and you'll just need to remember the units, or look them up.</p>
 <p>One last note, the strength of concrete will depend on how long it is kept moist while curing.  If it isn't kept moist the concrete will dry out, and there won't be sufficient water for the curing reactions to complete.  If concrete is steam cured, it will actually reach the maximum 28 day strength much sooner, due to the continuous moisture and additional heat.  This is one of the reasons precast plants often use steam curing, to increase production.</p>
 
 </div>
@@ -791,10 +791,10 @@ $$S = \left[ \frac{\Sigma(X_i - \bar{X})^2}{(n-1)} \right]^{1/2}$$<p><table styl
 <p>Next the required average compressive strength ($f'_{cr}$) needs to be calculated.  This is done by finding the larger value of the two following equations.</p>
 $$f'_{cr} = f'_c + 1.34 S$$$$f'_{cr} = f'_c + 2.33 S - 500$$<p>Where:</p>
 <ul>
-<li>$f'c$ is in psi and is less then or equal to 5,000 psi</li>
+<li>$f'_c$ is in psi and is less then or equal to 5,000 psi</li>
 <li>$S$ is the modified standard deviation</li>
 </ul>
-<p>If $f'c$ is greater than 5,000 psi then the second equation becomes:</p>
+<p>If $f'_c$ is greater than 5,000 psi then the second equation becomes:</p>
 $$f'_{cr} = 0.90 f'_c + 2.33 S $$<p><a href = "https://en.wikipedia.org/wiki/Probabilistic_design"> <img src="http://i.imgur.com/8SCmmm4.jpg" alt = "Statistical interference of distributions image" Title="Strength vs. Resistance"  style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:10px;"/></a>
 If and only if the batch plant's mix is of equal to or greater than the value of the largest value of $f'_{cr}$ then it can be used.  The purpose of this check is to provide a safety factor in ordering concrete.  This procedure will limit the probability of a batch strength failure to less then 1 in 100.</p>
 <p>If a batch of concrete is poured on site and turns out to have a strength of more then 500 psi less than the specified $f'_c$, (or by more than 10% below the design strength if $f'_c$ is more than 5000 psi) it will need to be removed and replaced.  Concrete also needs to be removed and replaced if the average of three consecutive compression tests is less than the specified strength, $f'_c$. This can be quite costly and time consuming.</p>
