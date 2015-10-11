@@ -775,13 +775,8 @@ Concrete is specified by its compressive strength ($f'_c$).  Normal weight concr
 <p>When ordering concrete there is something else you'll need to keep in mind.  Every batch of concrete needs to have its quality verified.  This is done by taking three samples at the time of pouring.  These samples are typically prepared in cylinders, and need to be cured in either laboratory, or field conditions, depending on the testing purpose.  If tests are being conducted to verify structural strength, then they need to be cured in conditions as close as possible to the concrete being used in the structure.  These will be typically tested at 7 days, and 28 day to verify strength.  The third cylinder is held in reserve if further testing is required.</p>
 <p>If you have a specified concrete strength that needs to be ordered from a batch plant, then you are going to be curing the samples in laboratory conditions.  This sort of testing should be done prior to the start of construction.  If you are ordering a mix that has previously been produced by the batch plant, then you can use their records to check to see if the mix strength meets the required design specifications.</p>
 <p>To determine the required strength for a project, you need to use the standard deviation ($S$ or $\sigma$ in the plot above) of the mix strength.</p>
-$$S = \left[ \frac{\Sigma(X_i - \bar{X})^2}{(n-1)} \right]^{1/2}$$<p><table style="float:right"></p>
-<p><tr><td>No. of tests</td><td>Modification Factor</td></tr></p>
-<p><tr><td>15</td><td>1.16</td></tr></p>
-<p><tr><td>20</td><td>1.08</td></tr></p>
-<p><tr><td>25</td><td>1.03</td></tr></p>
-<p><tr><td>30 or more</td><td>1.00</td></tr>
-&lt;/table&gt;Where:</p>
+$$S = \left[ \frac{\Sigma(X_i - \bar{X})^2}{(n-1)} \right]^{1/2}$$<p><a href = "https://books.google.com/books?id=c6yQszMV2-EC&pg=PT69&lpg=PT69&dq=calculating+fcr+for+concrete+with+20+samples+and+standard+deviations&source=bl&ots=nWPoMY0AMH&sig=hZNQUndj1M0OpIy0mKqlzU6ak6A&hl=en&sa=X&ved=0CB8Q6AEwAWoVChMI5-316dK6yAIVwlQ-Ch1w9AQ4#v=onepage&q=calculating%20fcr%20for%20concrete%20with%2020%20samples%20and%20standard%20deviations&f=false"> <img src="http://i.imgur.com/K5LFcDL.jpg" alt = "S modifier table image" Title="S Modifier Table"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>
+Where:</p>
 <ul>
 <li>$X_i$ is individual strength test results</li>
 <li>$\bar{X}$ is average of the $n$ strength tests ($\mu$ in the plot above)</li>
@@ -808,6 +803,47 @@ If and only if the batch plant's mix is of equal to or greater than the value of
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>(<a href="http://www.nrmca.org/aboutconcrete/cips/35p.pdf">CIP 35 - Testing Compressive Strength of Concrete</a>)</em></p>
+<p><em>(See slide below for example.)</em></p>
+
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This table contains selectable text.</p>
+<table>
+<caption>Standard Deviation Modifiers</caption>
+<tr><td>No. of tests</td><td>Modification Factor</td></tr>
+<tr><td>15</td><td>1.16</td></tr>
+<tr><td>20</td><td>1.08</td></tr>
+<tr><td>25</td><td>1.03</td></tr>
+<tr><td>30 or more</td><td>1.00</td></tr>
+</table><p>Given the standard deviation of 15 samples is 250 psi then the standard deviation to use is,
+$$S = S_{15}\times 1.16$$
+$$S = 250 psi\times 1.16 = 290 psi$$</p>
+<p>If you need $f'_c = 3,000 psi$ then,</p>
+\begin{equation*}
+f'_{cr} = \max \left\{
+\begin{array}{rl}
+f'_c +1.34 S = 3,389 psi\\
+f'_c +2.33 S -500 = 3,176 psi
+\end{array} \right.
+\end{equation*}$$f'_{cr} = 3,389 psi$$<p>But since you only specify orders in 100 psi increments and you cannot order less than required you round up and order 3,400 psi concrete.</p>
+<blockquote><p>Note: When there is reasonable doubt, any estimated sample standard deviation used to calculate the required average strength should always be on the conservative (high) side. (<a href="https://books.google.com/books?id=c6yQszMV2-EC&pg=PT69&lpg=PT69&dq=calculating+fcr+for+concrete+with+20+samples+and+standard+deviations&source=bl&ots=nWPoMY0AMH&sig=hZNQUndj1M0OpIy0mKqlzU6ak6A&hl=en&sa=X&ved=0CB8Q6AEwAWoVChMI5-316dK6yAIVwlQ-Ch1w9AQ4#v=onepage&q=calculating%20fcr%20for%20concrete%20with%2020%20samples%20and%20standard%20deviations&f=false">source</a>)</p>
+</blockquote>
+<h3 id="To-few-samples:">To few samples:<a class="anchor-link" href="#To-few-samples:">&#182;</a></h3><p>When there are not at least 15 samples available then you need to use the following equations.</p>
+\begin{equation*}
+f'_{cr} = \left\{
+\begin{array}{rl}
+f'_c+1,000 & \text{if } f'_c < 3,000\\
+f'_c+1,200 & \text{if } 3,000 \le f'_c\le 5,000\\
+1.10 f'_c+700 & \text{if } f'_c > 5,000
+\end{array} \right.
+\end{equation*}<p>Where both $f'_c$ and $f'_{cr}$ are in $psi$.</p>
 
 </div>
 </div>
