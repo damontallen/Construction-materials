@@ -34,6 +34,29 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 <script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
+<!-- Loading the mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
+
 <!-- Get Font-awesome from cdn -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
 
@@ -145,11 +168,9 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-html {
-  overflow-y: auto;
-}
 .reveal {
   font-size: 160%;
+  overflow-y: scroll;
 }
 .reveal pre {
   width: inherit;
@@ -202,6 +223,14 @@ div.output_prompt {
   /* 5px right shift to account for margin in parent container */
   margin: 5px 5px 0 0;
 }
+div.text_cell.rendered .rendered_html {
+  /* The H1 height seems miscalculated, we are just hidding the scrollbar */
+  overflow-y: hidden;
+}
+a.anchor-link {
+  /* There is still an anchor, we are only hidding it */
+  display: none;
+}
 .rendered_html p {
   text-align: inherit;
 }
@@ -215,9 +244,7 @@ div.output_prompt {
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
-    <section>
-    
+<section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -232,63 +259,10 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Embedded YouTube Video</p>
-
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/l8q5ceY9MKo" frameborder="0" allowfullscreen></iframe></p>
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-Show-Table-of-Contents">Slide Show Table of Contents<a class="anchor-link" href="#Slide-Show-Table-of-Contents">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="mp3 Path"
-     type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><a href="#">Paint</a><ul>
-<li><a href="#/2">Slide 1 Title</a></li>
-<li><a href="#/3">Slide 2 Title</a></li>
-<li><a href="#/4">Slide 3 Title</a></li>
-<li><a href="#/5">Slide 4 Title</a></li>
-<li><a href="#/6">Slide 5 Title</a></li>
-<li><a href="#/7">Slide 6 Title</a></li>
-<li><a href="#/8">Slide 7 Title</a></li>
-<li><a href="#/9">Slide 8 Title</a></li>
-<li><a href="#/10">Slide 9 Title</a></li>
-<li><a href="#/11">References</a></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -303,9 +277,8 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Introduction.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
 </audio>
@@ -317,16 +290,13 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The order of this lecture is based on the order of thinking when deciding to <a href="https://en.wikipedia.org/wiki/Paint">paint</a>.  The thought process is backward from actually painting since you have to have the final product in mind first and then investigate what is needed to accomplish it.</p>
-<p>There is evidence that humans have been using paint for at least 100,000 years.  I could go into the history a little but with the changes that have occurred since the industrial revolution and later most of what I would cover would be irrelevant.  Before starting to write this lecture I thumbed through a book written in 1919, titled “1995 Paint Questions Answered” (1995 in this case refers to the number of questions and not the year) and I was somewhat surprised at the general lack of relevance to what is done today.  I'm not saying information like what is discussed in topic 811, “Paint for Banner Work” might still be useful but I don't think it is too common to paint on silk anymore.  Admittedly I do not spend a great deal of time discussing painting with professionals and I am only guessing but I'm going to go with my gut on this one.</p>
-<p>I will be one of the first to say if you are working on a historic project it is useful to have these old references to see about matching technique and appearance but beyond that… Paint has come a long way recently with the elimination of lead in most paints and additives that help with ultraviolet protection.  Anyway let's get started.</p>
+<p>The order of this lecture is based on the order of your thought process when deciding to <a href="https://en.wikipedia.org/wiki/Paint">paint</a>.  Thinking about painting is backward from actually painting since you have to have the final product in mind first, and then investigate what is needed to accomplish it.</p>
+<p>There is evidence that humans have been using paint for at least 100,000 years.  I could go into the history a little, but with the changes that have occurred since the industrial revolution, and later, most of what I would cover would be irrelevant.  For instance, before writing this, I reviewed “1995 Paint Questions Answered” &copy; 1919 (1995 in this case refers to the number of questions and not the year) and was somewhat surprised just how much is not done today.  I'm not saying, “Paint for Banner Work (#811)” might not be useful, but I don't think there's much of a call for painting on silk anymore.  I admit I am not really up to date on banner painting, but I'm sticking with my gut on this one.</p>
+<p>I will point out that if you are working on a historic project, it is useful to have an old references text for matching techniques, and appearance but beyond that… Paint has come a very long way, including the recent elimination of the use of lead from most paints and additives as an ultraviolet protection.  Anyway let's get started.</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -341,9 +311,8 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Finish-Types.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
 </audio>
@@ -356,22 +325,19 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href = "https://en.wikipedia.org/wiki/Paint"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/EWM_paint_2007.jpg/300px-EWM_paint_2007.jpg" alt = "Paints image" Title="Paint"  style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a>
-There are three or four (depending on how you count) types of finishes you can achieve with paint.  These include flat or matte finish, semi-gloss also sometimes called eggshell, gloss, and transparent.  The last of these is often not considered a painted finish but due to the similarity of application and purpose it is going to be included here.</p>
-<p>Flat finishes are excellent for creating even lighting conditions in a space.  Unlike all the other finishes a flat finish will not reflect a light source so there is reduced glare.  This creates soft lighting conditions  which are pleasing to the eye.</p>
-<p>The drawback of flat paints is that the painted surface is generally less durable than a gloss or semi-gloss finish and is more prone to accumulating dirt.  For this reason flat finishes should be limited to light-duty areas such as small private offices, living rooms, or adult bedrooms.</p>
-<p>Semi-gloss is as you might expect somewhere between gloss and flat finishes.  It is more durable than flat finishes but still not durable enough to be applied on horizontal surfaces below the ceiling.  This finish may not appear to have the correct surface appearance initially; it may be too glossy.  This has to do with some paints' drying processes and should be given at least a few days before making a determination on whether or not the surface needs to have a different finish.</p>
-<p>Because of the increased durability of semi-gloss it can be cleaned more easily.  This means it can be used in higher traffic areas such as private corridors, larger offices, entry ways, and children's rooms.  It will have some glare caused by reflected light so if that is a problem it should only be used in areas where furnishings can be used to block direct glare.</p>
-<p>Gloss finishes are the most durable and as such horizontal surfaces will generally by glossy.  Floors that are painted will typically be glossy because the resistance to cleaners and abrasion.  Not every glossy paint will satisfy these requirements but the ones that do are likely to be glossy.</p>
-<p>Due to the need for regular cleaning, areas that have high amounts of moisture, grease, or other airborne contaminants are heavy-duty conditions and should have gloss finishes (or at least semi-gloss).  Areas like kitchens, bathrooms, recreation rooms, public corridors, apartments or other public spaces should be considered heavy-duty conditions for painted surfaces.</p>
-<p>Transparent finishes are different than the ones I've already listed in that they can practically fall into any of the previous categories.  Depending on the material used a transparent finish can be used for a floor finish or a finish around windows and doors.  Generally a transparent finish is over wood but transparent finishes can be used over stone and I have even heard of a clear epoxy being used over river rock gravel to form a decorative floor.</p>
-<p>If a transparent finish is used over wood though it can be made up of various parts.  It can consist of a top clear layer (or mostly clear layer) and a color layer (like a stain) beneath or it can consist of a blend of color and clear, or just a clear layer over wood.  There are other bit and pieces to what makes up a transparent finish over wood but the details of those have to do with the components that make up the finish.  I'll be covering the categories of paint chemistry next.</p>
+There are three or four (depending on how you count) types of finishes you can achieve with paint.  These include a flat or matte finish, semi-gloss also sometimes called eggshell, gloss, and transparent.  The last of these is often not considered a painted finish, but due to the similarity of application, and purpose, it is going to be included here.</p>
+<p>Flat finishes are excellent for creating even lighting conditions in a space.  Unlike all the other finishes a flat finish will not reflect a light source so they reduce glare.  Flat finishes create soft lighting conditions which are pleasing to the eye.</p>
+<p>The drawback of flat paints is that the painted surface is generally less durable than a gloss, or semi-gloss finish, and is more prone to accumulating dirt.  For this reason flat finishes should be limited to light-duty areas such as small private offices, living rooms, or adult bedrooms.</p>
+<p>Semi-gloss is as you might expect, somewhere between gloss and flat finishes.  It is more durable than flat finishes, but still not durable enough to be applied on horizontal surfaces below the ceiling.  When applying this finish, it may not look right initially; it may be too glossy.  This has to do with some versions of the semi-gloss paints' drying processes, and should be given at least a few days before making a determination on whether, or not, the surface needs to have a different finish.</p>
+<p>Because of the increased durability of semi-gloss it can be cleaned more easily.  This means it can be used in higher traffic areas such as private corridors, larger offices, entry ways, and children's rooms.  It will have some glare caused by reflected light, so if that is a problem, it should only be used in areas where furnishings can be used to block direct glare.</p>
+<p>Gloss finishes are the most durable, and as such, horizontal surfaces will generally by glossy.  Floors that are painted will typically be glossy due to the resistance to cleaners, and abrasion.  Not every glossy paint will satisfy these requirements, but the paints that do will be glossy.</p>
+<p>Due to the need for regular cleaning, areas that have high amounts of moisture, grease, or other airborne contaminants, are considered heavy-duty conditions for a paint, and should have gloss finishes (or at least semi-gloss).  Areas like kitchens, bathrooms, recreation rooms, public corridors, apartments or other public spaces should be considered to be heavy-duty for painted surfaces.</p>
+<p>Transparent finishes can fall into any of the previous categories.  Depending on the material used, a transparent finish can be used for a floor finish, or a finish around windows and doors.  Even though transparent finishes are generally used over wood, they can be used over stone, and I have even heard of a thick layer of clear epoxy being used as a primary wear surface over river rock gravel in a decorative floor.</p>
+<p>If a transparent finish is used over wood, it can be built up from multiple layers.  A top clear layer and a color or stain layer beneath, or the finish can consist of a blend of color and clear, or it can just be a couple clear layers over wood.  There are more details to what makes up transparent finishes over wood, but that is all you need to know for now.</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -386,9 +352,8 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Paint-Types.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
 </audio>
@@ -400,18 +365,15 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When talking about types of paint you are going to be referring to the type of binder used in the paint.  The most common types of binders are oil-based, acrylic, latex, and epoxies.  These are by no means the only binders the can be used but they are the most common in construction.  Oil-based paints consist of a pigment suspended in a drying oil like <a href="https://en.wikipedia.org/wiki/Linseed_oil">linseed oil</a>.  Drying oils are a type of oil that cross-links when exposed to air.  This is not the same as drying and does not have to do with the evaporation of any solvent present.  That being said it is important to have adequate ventilation when using oil-based paints.  This type of paint is slow drying and as such it is important to only apply it when the environmental conditions are going to be conducive to drying.  The advantage of oil paint is that it is generally very durable and it leaves a smoother finish.  One additional problem with oil pain is that it will crack when it gets old.</p>
-<p>Acrylic paint uses water for the solvent and as such you only need soap and water for clean up.  When the water evaporates the acrylic particles bind together in a polymerization process.  The drying process is much quicker than with oil paint and in recent years the formulation of acrylic paint has improved leading to durability that approaches that of oil without the cracking.</p>
-<p>Latex paint is actually a misnomer; there is no latex in latex paint.  The term used in the United States to refers to and paint that is water based.  That means the acrylic paint will often be called latex-acrylic.  Another type of paint that is referred to as latex uses vinyl as a binder.  Vinyl is more susceptible to damage from ultraviolet light and generally results in a weaker finish.  However vinyl is cheaper than acrylic and that is why it is still in use.</p>
-<p>Epoxy paint is a two part system that is mixed together right before application.  Epoxy paints are very durable and cure into cross-linked polymer films.  They provide excellent chemical resistance, good solvent resistance, good acid resistance, and very good abrasion resistance.  They are difficult to clean up and can be very expensive.  Additionally they can be brittle and susceptible to ultraviolet damage.</p>
-<p>There is another type of binder known as urethane (as in polyurethane) is also very durable but more generally used in painting metal surfaces.  It is common in high wear areas like handrails but not exclusively used.</p>
+<p>When talking about paint types, you need to specify to the type of binder used in the paint.  The most common types of binders are oil-based, acrylic, latex, and epoxies.  These are by no means the only binders the can be used, but they are the most common in construction.  Oil-based paints consist of a pigment suspended in a drying oil like <a href="https://en.wikipedia.org/wiki/Linseed_oil">linseed oil</a>.  Drying oils are a type of oil that forms cross-link bonds when exposed to air.  This is not the same as drying, and does not have to do with the evaporation of any solvent present.  That being said, it is important to have adequate ventilation when using oil-based paints.  This type of paint is slow to dry and it is important to only apply it when the environmental conditions are going to be conducive to the drying process.  The advantage of oil paint is that it is generally very durable, and it leaves a smooth finish.  One additional problem with oil paint is that it can crack with age.</p>
+<p>Acrylic paint uses water for the solvent, which means you only need soap and water to clean up.  When the water evaporates the acrylic particles bind together in a polymerization process.  The drying process is much quicker than with oil paint, and in recent years the formulation of acrylic paint has improved leading to a durability that approaches that of oil without the risk of cracking.</p>
+<p>Latex paint is actually a misnomer; there is no latex in latex paint.  The term used in the United States to refers to any paint that is water based.  That means the acrylic paint will often be called latex-acrylic.  Another type of paint that is referred to as latex uses vinyl as a binder.  Vinyl is more susceptible to damage from ultraviolet light, and generally results in a weaker finish.  However vinyl is cheaper than acrylic, and that is why it is still fairly common.</p>
+<p>Epoxy paint is a two part system that is mixed together right before application.  Epoxy paints are very durable, and cure into cross-linked polymer films.  They provide excellent chemical resistance, good solvent resistance, good acid resistance, and very good abrasion resistance.  On the down side, they are difficult to clean up, and can be very expensive.  Additionally, they can be brittle, and are susceptible to ultraviolet damage.</p>
+<p>There is another type of binder known as urethane (as in polyurethane).  It is also very durable, but more generally used in painting metal surfaces.  It is common in high wear areas like handrails, but it is not the only type of paint used on handrails.</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -426,9 +388,8 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Surface-Considerations.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
 </audio>
@@ -440,20 +401,17 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For interior surfaces like walls and ceilings your are likely going to be painting over one of three things, paper, plaster, or masonry.  Both plaster and masonry are going to chemically similar to concrete so on the off chance that you are painting a concrete wall or ceiling you can just use the same material.  That is not to say that there can't be differences like if the concrete is below grade and you have moisture issues but if that is the case then look at what is covered with regards to floors.</p>
-<p>Now, you are probably wondering what I meant when I said paper.  In this case I am referring to the paper covering of drywall and not wallpaper.  In any case when we are considering surface conditions we are really considering what type of primer is needed.  Primer is a type of paint that serves as a bonding agent between the material of the surface and the top layer of paint.  The type of primer will also depend on whether the surface is interior or exterior.  That is to say will the final painted surface be regularly exposed to ultraviolet, rain, and cold or will it likely be exposed to cleaners and abrasion regularly?</p>
-<p>For plaster and paper on the interior of a building the you are more likely going to be looking at a water based primer though if your top coat is going to be oil-based then there are some primers that are oil based that will work.  However some modern formulations of water based primers will be capable of supporting a oil based top coat.  One concern that should be addressed is that masonry walls can be very porous and it may be necessary to use a block filler or cement grout to fill the voids prior to priming.</p>
-<p>The trim that surrounds the openings in the interior of a building is likely to be either wood or metal.  Both of these surfaces are likely to need a primer that is not water based.  Water will raise the grain of wood making it rough and water can also cause damage to metal.  Once the primer is dry an acrylic top coat can be used but it may be better, for the metal at least, to go with an oil topcoat.  The reason for this is trim is more likely to get cleaned on a regular basis and thus it will need the added durability.</p>
-<p>As for floors we at really only considering concrete and wood.  It is possible that metal floors are being used but if that is the case then there are likely additional considerations that need to be accounted for like chemical exposure and extreme wear.  Either one of these may necessitate the use of special treatment.  For a concrete floor that is going to have regular exposure to water you do not want to have a water based paint.  This has also been true for wood floors.  That being said in resent years there have been improvements in water based paints and some have proven adequate for the job.  The type of topcoat that you will likely have to apply is called an <a href="https://en.wikipedia.org/wiki/Enamel_paint">enamel</a> paint.  These paints are <a href="https://en.wikipedia.org/wiki/Alkyd">alkyd</a> based (a type of oil paint) and are generally glossy.</p>
-<p>In addition to enamel on wood floors you may end up using a transparent finish like polyurethane.  If that is the case then, depending on the desired final result, you may be applying a stain to the floor.  It is also likely that some preparation will need to be done to the floor in the way of filling small holes and defects.  Filler needs to have time to dry and then be sanded smooth prior to additional finishing.  Some fillers may need to be applied after the stain and first coat of polyurethane is applied.  The reason for this is that the filler will not absorb stain to the same amount as the wood and it is likely that a slightly different formulation of stain will need to be used.</p>
+<p>For interior surfaces like walls, and ceilings, your are likely to be painting over one of three surfaces, paper, plaster, or masonry.  Both plaster, and masonry, are going to chemically similar to concrete, so on the off chance that you are painting a concrete wall, or ceiling you can just use the same material.  That is not to say that there can't be differences.  For instance if the concrete is below grade, and you have moisture issues, but if that is the case, then consider using simular material as that used with floors.</p>
+<p>Now, you are may be wondering what I meant when I said paper.  In this case I am referring to the paper covering of drywall, and not wallpaper which is now commonly a vinyl product.  In any case, when we are considering surface conditions, we are really are considering what type of primer is needed.  Primer is a type of paint that serves as a bonding agent between the surface material, and the top layer of paint.  The type of primer used will also depend on whether the surface is interior, or exterior.  That is to say, will the final painted surface be regularly exposed to ultraviolet, rain, and cold, or will it likely be exposed to cleaners, and abrasion regularly?</p>
+<p>For plaster, and paper in the interior of a building the you are more likely going to be looking at a water based primer, though if your topcoat is going to be oil-based then there are some primers that are oil based that will work.  However, some modern formulations of water based primers will support a oil based topcoat.  One concern that should be addressed is that masonry walls can be very porous, and it may be necessary to use a block filler, or cement grout to fill the voids prior to priming.</p>
+<p>The trim that surrounds the openings in the interior of a building is likely to be either wood, or metal.  Both of these surfaces are likely to need a primer that is not water based.  Water will raise the grain of wood making it rough, and water can also cause damage to metal.  Once the primer is dry, an acrylic topcoat can be used, but it may be better, for the metal at least, to go with an oil topcoat.  The reason for this is trim is more likely to get cleaned on a regular basis, and thus it will need added durability.</p>
+<p>As for floors we at only really need to consider concrete, and wood.  Metal floors do exist, but then there are likely additional considerations that need to be accounted for, like chemical exposure, and extreme wear.  Both of these may necessitate the use of special treatment.  For a concrete floor that is going to have regular exposure to water, you do not want to use a water based paint.  This has also been true for wood floors.  However, again in resent years there have been improvements in water based paints, and some have proven adequate for the job.  The topcoat that is currently most common is called <a href="https://en.wikipedia.org/wiki/Enamel_paint">enamel</a> paint.  These paints are <a href="https://en.wikipedia.org/wiki/Alkyd">alkyd</a> based (a type of oil paint), and are generally glossy.</p>
+<p>As an alternative to enamel on wood floors, you may end up using a transparent finish like polyurethane.  If that is the case then, depending on the desired final result, you may be applying a stain to the floor first.  It is also likely that some preparation will need to be done to the floor in the way of filling small holes, and defects.  Any filler used will need to have time to dry, and then be sanded smooth prior to additional finishing.  Some fillers may need to be applied after the stain, and first coat of polyurethane, is applied.  The reason for this is that some fillers will not absorb stain to the same degree as wood, and it will likely that a slightly different formulation of stain to achieve a similar appearance.</p>
 <p><a href="https://en.wikipedia.org/wiki/Wood_stain">Stain</a> is generally a solvent (not water) based product that contains a color that is not opaque.  If the wood is not <a href="https://en.wikipedia.org/wiki/Sealant#Types_of_sealants">sealed</a> prior to applying the stain, the stain may not absorb evenly and the final product may end up with a blotchy finish (test a few samples prior to settling on the final procedure).</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -468,9 +426,8 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Exterior.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
 </audio>
@@ -482,125 +439,14 @@ There are three or four (depending on how you count) types of finishes you can a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Exterior walls and roofs are going to have different requirements places on them than paints and coatings that are not exposed to sun and rain.  The differences are seen in both the preparation and final  coat.  For instance a metal roof may require specialty paint that includes metal particulates.  It also may need to be treated with an acid to act as a primer.  However you are still likely going to be looking at an oil-base primer and paint.</p>
-<p>If you are looking at wood walls on the exterior of a building you are also likely going to be looking at an oil-bases primer, though, again, this has become less of a certainty in recent years with advances in water based paints.  That being said it is still likely that you will need an oil-bases finish if there are knots or stains that need to be covered in the wood.</p>
-<p>For masonry and concrete you could be using almost anything but the more water that needs to be resisted the more durable of a paint or coating will need to be applied.  There are special coatings that need to be used if the concrete or masonry is going to be below grade.  Not all concrete or masonry surfaces below grade need to be coated, only the ones that need to have water prevented from penetrating the structure.</p>
-<p>That should be sufficient to get you started in your reading.  One last thing that is not covered in your text; <a href="https://en.wikipedia.org/wiki/Shellac">shellac</a> is a natural product that comes from an insect.  It is not used in construction much anymore but it may be needed in a historic project in order to match an existing finish.</p>
+<p>Paints on exterior walls, and roofs, are going to have different demands placed on them than the paints, and coatings that are not exposed to sun, and rain.  The differences can be seen in both the surface preparations, and final coat.  For instance a metal roof may require specialty paint that includes metal particulates.  It also may need to be treated with an acid instead of a regular primer.  However, you are just as likely to be looking at an oil-base primer, and paint.</p>
+<p>If you are working on wooden exterior wall surfaces, you are also likely going to be using an oil-based primer.  Though, again, this has become less of a certainty in recent years with advances in water based paints.  However, you will likely need an oil-based finish if knots or stains are present on the surface of the wood.</p>
+<p>For masonry, and concrete, you could be using almost anything, but the more water that needs to be resisted, the more durable the paint coating will need to be.  There are even special coatings that may need to be used if the concrete, or masonry, is going to be below grade.  Not all concrete, or masonry, surfaces below grade need to be coated, only the ones that need to have have a moisture retarder applied.</p>
+<p>With that you should be be ready to start reading.  One last thing that is not covered in your text; <a href="https://en.wikipedia.org/wiki/Shellac">shellac</a>, it is a natural product that comes from an insect.  It is not used in construction much anymore, but it may be needed in a historic project in order to match an existing interior wood finish.  The solvent used with shellac is denatured alcohol (<a href="https://www.youtube.com/watch?v=1PC2m-ul5AE">video covering mixing</a>).</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-6-Title">Slide 6 Title<a class="anchor-link" href="#Slide-6-Title">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Slide Content</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-7-Title">Slide 7 Title<a class="anchor-link" href="#Slide-7-Title">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Slide Content</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slide-8-Title">Slide 8 Title<a class="anchor-link" href="#Slide-8-Title">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Edit Slide Audio</p>
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_11/Paint/Paint-Slide_Title.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Slide Content</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -624,96 +470,61 @@ There are three or four (depending on how you count) types of finishes you can a
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Additional-References">Additional References<a class="anchor-link" href="#Additional-References">&#182;</a></h2>
+</div></section></section>
 </div>
 </div>
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Wikipedia:</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Oil_paint">Oil Paint</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Drying_oil">Drying Oil</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Acrylic_paint">Acrylic Paint</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Emulsion_polymerization">Emulsion Polymerization</a></li>
-</ul>
-<p>Other Sources:</p>
-<ul>
-<li><a href="http://diy.stackexchange.com/questions/4669/whats-the-practical-difference-between-latex-and-acrylic-water-dispersion-p">DIY Stackexchange</a></li>
-<li><a href="http://www.homedepot.com/c/exterior_paint_buying_guide_HT_BG_PA">Home Depot</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-    </div></section>
-    </section>
-</div>
-</div>
-
-<script src="reveal.js/lib/js/head.min.js"></script>
-
-<script src="reveal.js/js/reveal.js"></script>
 
 <script>
 
-// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
+require(
+    {
+      // it makes sense to wait a little bit when you are loading
+      // reveal from a cdn in a slow connection environment
+      waitSeconds: 15
+    },
+    [
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
+    ],
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+    function(head, Reveal){
 
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: "reveal.js/lib/js/classList.js", condition: function() { return !document.body.classList; } },
-{ src: "reveal.js/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
-]
-});
-</script>
+        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
 
-<!-- Loading mathjax macro -->
-<!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration -->
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
-<script>
-Reveal.addEventListener( 'slidechanged', function( event ) {
-  window.scrollTo(0,0);
-  MathJax.Hub.Rerender(event.currentSlide);
-});
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: "reveal.js/lib/js/classList.js",
+                  condition: function() { return !document.body.classList; } },
+                { src: "reveal.js/plugin/notes/notes.js",
+                  async: true,
+                  condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+        var update = function(event){
+          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
+            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
+          }
+        };
+
+        Reveal.addEventListener('slidechanged', update);
+
+        var update_scroll = function(event){
+          $(".reveal").scrollTop(0);
+        };
+
+        Reveal.addEventListener('slidechanged', update_scroll);
+
+    }
+);
+
 </script>
 
 </body>
