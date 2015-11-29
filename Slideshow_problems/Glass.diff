@@ -1,0 +1,170 @@
+--- /home/damon/Documents/IPython Notebooks/GitHub/Link to Construction Materials/Github.io/Second attempt/Construction-materials/Glass.slides.html
++++ /home/damon/Documents/IPython Notebooks/GitHub/Link to Construction Materials/Github.io/Second attempt/Construction-materials/Glass-1.slides.html
+@@ -33,6 +33,29 @@
+ <!--[if lt IE 9]>
+ <script src="reveal.js/lib/js/html5shiv.js"></script>
+ <![endif]-->
++
++<!-- Loading the mathjax macro -->
++<!-- Load mathjax -->
++    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
++    <!-- MathJax configuration -->
++    <script type="text/x-mathjax-config">
++    MathJax.Hub.Config({
++        tex2jax: {
++            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
++            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
++            processEscapes: true,
++            processEnvironments: true
++        },
++        // Center justify equations in code and markdown cells. Elsewhere
++        // we use CSS to left justify single line equations in code cells.
++        displayAlign: 'center',
++        "HTML-CSS": {
++            styles: {'.MathJax_Display': {"margin": 0}},
++            linebreaks: { automatic: true }
++        }
++    });
++    </script>
++    <!-- End of mathjax configuration -->
+ 
+ <!-- Get Font-awesome from cdn -->
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+@@ -145,11 +168,9 @@
+ 
+ <style type="text/css">
+ /* Overrides of notebook CSS for static HTML export */
+-html {
+-  overflow-y: auto;
+-}
+ .reveal {
+   font-size: 160%;
++  overflow-y: scroll;
+ }
+ .reveal pre {
+   width: inherit;
+@@ -201,6 +222,14 @@
+ div.output_prompt {
+   /* 5px right shift to account for margin in parent container */
+   margin: 5px 5px 0 0;
++}
++div.text_cell.rendered .rendered_html {
++  /* The H1 height seems miscalculated, we are just hidding the scrollbar */
++  overflow-y: hidden;
++}
++a.anchor-link {
++  /* There is still an anchor, we are only hidding it */
++  display: none;
+ }
+ .rendered_html p {
+   text-align: inherit;
+@@ -506,59 +535,59 @@
+ </div>
+ </div>
+ 
+-<script src="reveal.js/lib/js/head.min.js"></script>
+-
+-<script src="reveal.js/js/reveal.js"></script>
+-
+ <script>
+ 
+-// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+-Reveal.initialize({
+-controls: true,
+-progress: true,
+-history: true,
+-
+-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+-transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+-
+-// Optional libraries used to extend on reveal.js
+-dependencies: [
+-{ src: "reveal.js/lib/js/classList.js", condition: function() { return !document.body.classList; } },
+-{ src: "reveal.js/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+-]
+-});
++require(
++    {
++      // it makes sense to wait a little bit when you are loading
++      // reveal from a cdn in a slow connection environment
++      waitSeconds: 15
++    },
++    [
++      "reveal.js/lib/js/head.min.js",
++      "reveal.js/js/reveal.js"
++    ],
++
++    function(head, Reveal){
++
++        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
++        Reveal.initialize({
++            controls: true,
++            progress: true,
++            history: true,
++
++            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
++            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
++
++            // Optional libraries used to extend on reveal.js
++            dependencies: [
++                { src: "reveal.js/lib/js/classList.js",
++                  condition: function() { return !document.body.classList; } },
++                { src: "reveal.js/plugin/notes/notes.js",
++                  async: true,
++                  condition: function() { return !!document.body.classList; } }
++            ]
++        });
++
++        var update = function(event){
++          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
++            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
++          }
++        };
++
++        Reveal.addEventListener('slidechanged', update);
++
++        var update_scroll = function(event){
++          $(".reveal").scrollTop(0);
++        };
++
++        Reveal.addEventListener('slidechanged', update_scroll);
++
++    }
++);
++
+ </script>
+ 
+-<!-- Loading mathjax macro -->
+-<!-- Load mathjax -->
+-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+-    <!-- MathJax configuration -->
+-    <script type="text/x-mathjax-config">
+-    MathJax.Hub.Config({
+-        tex2jax: {
+-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+-            processEscapes: true,
+-            processEnvironments: true
+-        },
+-        // Center justify equations in code and markdown cells. Elsewhere
+-        // we use CSS to left justify single line equations in code cells.
+-        displayAlign: 'center',
+-        "HTML-CSS": {
+-            styles: {'.MathJax_Display': {"margin": 0}},
+-            linebreaks: { automatic: true }
+-        }
+-    });
+-    </script>
+-    <!-- End of mathjax configuration -->
+-
+-<script>
+-Reveal.addEventListener( 'slidechanged', function( event ) {
+-  window.scrollTo(0,0);
+-  MathJax.Hub.Rerender(event.currentSlide);
+-});
+-</script>
+-
+ </body>
+ 
+ </html>
+
