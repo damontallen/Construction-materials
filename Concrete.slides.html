@@ -1072,6 +1072,121 @@ I've digressed though, and need to mention that batch plant will generally have 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Placing-Liquid-Concrete">Placing Liquid Concrete<a class="anchor-link" href="#Placing-Liquid-Concrete">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-materials/raw/master/Lecture_Audio/Week_5/Concrete/Concrete-Placing%20Liquid%20Concrete.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files is missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The fact that concrete cures instead of drying out has an effect on how it should be handled during placement.  Generally when concrete is poured it needs a form to define its final shape.  From your Physics course you should remember the concept of <a href="http://buildingscience.com/documents/insights/bsi-057-hockey-pucks-and-hydrostatic-pressure">hydrostatic pressure</a>; basically the pressure on a point on a wall is proportional to the depth, $h$, that that point is below the surface of the liquid and the liquid's unit weight $\gamma$.<br>
+$$P = \gamma h$$
+This holds true for concrete as well, as long as it is liquid.  The reason this is important to know is that the pressure the concrete exerts on the form containing it needs to be accounted in the form design, otherwise it can collapse.  For normal weight concrete the unit weight is 145 pcf and a wall does not need to be very tall before that pressure can become quite large.</p>
+<p>This is where the fact that concrete cures comes into play.  If the wall is filled slowly enough, then at a certain depth the concrete will turn to a solid and no longer exert greater pressure with depth as the pour continues.  There are a few equations that are used to calculate this maximum pressure.  I'm not going to ask you to remember them now but I wanted you to see them.
+\begin{equation<em>}
+P_{max} = \begin{cases}
+   C_W C_C \left[150 +9,000 \frac{R}{T}\right] \le \gamma h&amp; \text{for } R&lt; 7 ft/hr \text{ and } h\le 14ft\ 
+   C_W C_C \left[150 +\frac{43,400}{T}+2,800 \frac{R}{T}\right] \le \gamma h&amp; \text{for } 7 ft/hr \le R \le 15 ft/hr \text{ and } h\le 14ft\ 
+   600 C_W &amp; \text{minimum form pressure}\
+   \gamma h &amp; \text{maximum form pressure}
+  \end{cases}
+\end{equation</em>}
+Where:</p>
+<ul>
+<li>$P_{max}$ - The maximum expected form pressure in psf</li>
+<li>$C_W$ - Unit Weight Coefficient</li>
+<li>$C_C$ - Chemistry Coefficient</li>
+<li>$T$ - Ambient Temperature at Time of Pour in $^\circ$F</li>
+<li>$R$ - Rate of Filling (Change of depth with respect to time) in ft/hr</li>
+</ul>
+<p>The values of $C_W$ and $C_C$ come from tables in ACI 347-04.</p>
+<table>
+<thead><tr>
+<th>Unit Weight of Concrete</th>
+<th>$C_W$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Less than 140 pcf</td>
+<td>\begin{equation<em>}\begin{cases} 0.5\times[1+\frac{\gamma}{145 pcf})]\ \text{(but not less than 0.8)}\end{cases}\end{equation</em>}</td>
+</tr>
+<tr>
+<td>140 to 150 pcf</td>
+<td>$1.0$</td>
+</tr>
+<tr>
+<td>More than 150 pcf</td>
+<td>$\frac{\gamma}{145 pcf}$</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead><tr>
+<th>Cement Type or Blend</th>
+<th>$C_C$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Types I, II, and III without retarders*</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Types I, II, and III with a retarder*</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Other types of blends containing less than 70% slag or 40% fly ash without retarders*</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Other types of blends containing less than 70% slag or 40% fly ash with a retarder*</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>Blends containing more than 70% slag or 40% fly ash</td>
+<td>1.4</td>
+</tr>
+</tbody>
+</table>
+<blockquote><ul>
+<li>Retarders include any admixture, such as a retarder, retarding water reducer, retarding mid-range
+water-reducing admixture, or retarding high-range water-reducing admixture (superplasticizer), that
+delays setting of concrete.</li>
+</ul>
+</blockquote>
+<p><a href = "http://www.apawood.org/SearchResults.aspx?tid=1&q=V345"> <img src="http://i.imgur.com/ZsWIroL.jpg" alt = "Wall form pressure" Title="Wall Form Pressure"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>
+The reason these equations are useful is that they allow for lower form work design requirements than pure hydrostatic pressure.  You should notice that the longer it takes to fill a form, the lower the maximum pressure is in that form.  Again, this is due to the concrete curing (or setting up) and the pressure no longer increasing with the additional of more concrete.</p>
+<p>I would like you to know how to calculate the fill rate of a form.  This fill rate ($R$) is important and easy to calculate.  As the contractor you specify the delivery schedule of the concrete trucks, which is in turn equivalent to the volumetric fill rate, $\left(vol \text{, in units of }\frac{ft^3}{hr}\right)$ of the form.  Since the liquid concrete will always try to fill the form from the bottom up uniformly, the fill rate $R$ is found by simply dividing $vol$ by the horizontal cross-sectional area of the form.  If your form changes area with height it is best to use the narrowest section to calculate the pressure.  For an example of this calculation, if you have 3, 10 yd$^3$ trucks arriving per hour to pour a wall that is 40 ft long, 16 inches wide, and 13 ft tall, you can find the fill rate like this,
+$$vol = 10 yd^3 \times \frac{3}{hr} \times \frac{27 ft^3}{yd^3} = 30 \frac{yd^3}{hr} \times \frac{27 ft^3}{yd^3}$$
+$$vol = 810 \frac{ft^3}{hr}$$
+$$A = 16 in\times \frac{1 ft}{12 in}  \times 40 ft = 53.33 ft^2$$
+$$R = \frac{vol}{A} = \frac{810 ft^3/hr}{53.33 ft^2} = 15.2 \frac{ft}{hr}$$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1>
 </div>
 </div>
@@ -1090,41 +1205,9 @@ I've digressed though, and need to mention that batch plant will generally have 
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Additional-Resources-Referenced">Additional Resources Referenced<a class="anchor-link" href="#Additional-Resources-Referenced">&#182;</a></h3><h4 id="Wikipedia">Wikipedia<a class="anchor-link" href="#Wikipedia">&#182;</a></h4><ul>
-<li><a href="https://en.wikipedia.org/wiki/Portland_cement">Portland cement</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Environmental_impact_of_concrete">Environmental impact of concrete</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Cement">Cement</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Concrete_recycling">Concrete Recycling</a></li>
-</ul>
-<h4 id="Others">Others<a class="anchor-link" href="#Others">&#182;</a></h4><h5 id="Concrete">Concrete<a class="anchor-link" href="#Concrete">&#182;</a></h5><ul>
-<li><a href="http://www.titanamerica.com/uploads/ready_mix_va.pdf">Titan America - MSDS</a></li>
-<li><a href="http://www.nature.com/news/green-cement-concrete-solutions-1.12460">Nature - Green cement: Concrete solutions</a></li>
-<li><a href="http://www.cnn.com/2010/TECH/innovation/08/06/concrete.pollution.solution/">CNN - Could pollution-eating concrete clean up our urban jungles?</a></li>
-<li><a href="http://cleantechnica.com/2013/03/19/concrete-with-lower-carbon-footprint-created-from-biofuel-waste/">Clean Tchnica - Concrete With Lower-Carbon Footprint Created From Biofuel Waste</a></li>
-<li><a href="http://centralconcrete.com/sustainability/low-co2-concrete/">Central Concrete - High Performing, Low-CO$_2$ Concrete</a></li>
-<li><a href="http://www.concretenetwork.com/concrete/greenbuildinginformation/what_makes.html">Concrete Network - What Makes Concrete a Sustainable Building Material?</a></li>
-<li><a href="http://link.springer.com/article/10.1007%2FBF02473034">Strain of concrete at peak compressive stress for a wide range of compressive strengths</a></li>
-<li><a href="http://www.structuremag.org/?p=1251">Structures Magazine - What if Concrete Can Be Made Ductile?</a></li>
-</ul>
-<h5 id="Misc.">Misc.<a class="anchor-link" href="#Misc.">&#182;</a></h5><ul>
-<li><a href="http://www.bioworldusa.com/ph/household-bleach">BioWorld - pH of Household Bleach </a></li>
-</ul>
-
+</div></section></section>
 </div>
 </div>
-</div>
-    </div></section>
-    </section>
-</div>
-</div>
-
 <script src="reveal.js/lib/js/head.min.js"></script>
 
 <script src="reveal.js/js/reveal.js"></script>
