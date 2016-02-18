@@ -46,8 +46,8 @@ background-repeat: no-repeat;
   text-align: center;
   -webkit-perspective: 600px;
           perspective: 600px;
-  -webkit-perspective-origin: 50% 40%;
-          perspective-origin: 50% 40%; }
+  -webkit-perspective-origin: 75% 40%;
+          perspective-origin: 75% 40%; }
 /*.reveal p {
 color: white;
 }
