@@ -1097,16 +1097,15 @@ I've digressed though, and need to mention that batch plant will generally have 
 <p>The fact that concrete cures instead of drying out has an effect on how it should be handled during placement.  Generally when concrete is poured it needs a form to define its final shape.  From your Physics course you should remember the concept of <a href="http://buildingscience.com/documents/insights/bsi-057-hockey-pucks-and-hydrostatic-pressure">hydrostatic pressure</a>; basically the pressure on a point on a wall is proportional to the depth, $h$, that that point is below the surface of the liquid and the liquid's unit weight $\gamma$.<br>
 $$P = \gamma h$$
 This holds true for concrete as well, as long as it is liquid.  The reason this is important to know is that the pressure the concrete exerts on the form containing it needs to be accounted in the form design, otherwise it can collapse.  For normal weight concrete the unit weight is 145 pcf and a wall does not need to be very tall before that pressure can become quite large.</p>
-<p>This is where the fact that concrete cures comes into play.  If the wall is filled slowly enough, then at a certain depth the concrete will turn to a solid and no longer exert greater pressure with depth as the pour continues.  There are a few equations that are used to calculate this maximum pressure.  I'm not going to ask you to remember them now but I wanted you to see them.
-\begin{equation<em>}
+<p>This is where the fact that concrete cures comes into play.  If the wall is filled slowly enough, then at a certain depth the concrete will turn to a solid and no longer exert greater pressure with depth as the pour continues.  There are a few equations that are used to calculate this maximum pressure.  I'm not going to ask you to remember them now but I wanted you to see them.</p>
+\begin{equation*}
 P_{max} = \begin{cases}
-   C_W C_C \left[150 +9,000 \frac{R}{T}\right] \le \gamma h&amp; \text{for } R&lt; 7 ft/hr \text{ and } h\le 14ft\ 
-   C_W C_C \left[150 +\frac{43,400}{T}+2,800 \frac{R}{T}\right] \le \gamma h&amp; \text{for } 7 ft/hr \le R \le 15 ft/hr \text{ and } h\le 14ft\ 
-   600 C_W &amp; \text{minimum form pressure}\
-   \gamma h &amp; \text{maximum form pressure}
+   C_W C_C \left[150 +9,000 \frac{R}{T}\right] \le \gamma h& \text{for } R< 7 ft/hr \text{ and } h\le 14ft\\ 
+   C_W C_C \left[150 +\frac{43,400}{T}+2,800 \frac{R}{T}\right] \le \gamma h& \text{for } 7 ft/hr \le R \le 15 ft/hr \text{ and } h\le 14ft\\ 
+   600 C_W & \text{minimum form pressure}\\
+   \gamma h & \text{maximum form pressure}
   \end{cases}
-\end{equation</em>}
-Where:</p>
+\end{equation*}<p>Where:</p>
 <ul>
 <li>$P_{max}$ - The maximum expected form pressure in psf</li>
 <li>$C_W$ - Unit Weight Coefficient</li>
@@ -1124,7 +1123,7 @@ Where:</p>
 <tbody>
 <tr>
 <td>Less than 140 pcf</td>
-<td>\begin{equation<em>}\begin{cases} 0.5\times[1+\frac{\gamma}{145 pcf})]\ \text{(but not less than 0.8)}\end{cases}\end{equation</em>}</td>
+<td>$ 0.5\times[1+\frac{\gamma}{145 pcf})] \ge 0.8$</td>
 </tr>
 <tr>
 <td>140 to 150 pcf</td>
