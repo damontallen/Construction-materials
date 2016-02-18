@@ -44,8 +44,8 @@ background-repeat: no-repeat;
   overflow: visible;
   z-index: 1;
   text-align: center;
-  -webkit-perspective: 800px;
-          perspective: 800px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
           perspective-origin: 50% 40%; }
 /*.reveal p {
