@@ -1,0 +1,3 @@
+[submodule "construction_material_notes"]
+	path = construction_material_notes
+	url = https://gitlab.com/damontallen/construction_materials_notes.git
