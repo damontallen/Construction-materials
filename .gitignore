@@ -65,6 +65,6 @@ backup/
 # Working Files
 _*
 *.slides.html
-*.tex
-*.pdf
+# *.tex
+# *.pdf
 *.swp
